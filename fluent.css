@@ -1,0 +1,74 @@
+*{
+    font-family:  'Segoe UI', 'Product Sans', 'Roboto', sans-serif;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*Typography*/
+h1{font-size: 90px; font-weight: 200;}
+h2{font-size: 80px; font-weight: 200;}
+h3{font-size: 72px; font-weight: 200;}
+h4{font-size: 64px; font-weight: 200;}
+h5{font-size: 48px; font-weight: 200;}
+h6{font-size: 36px; font-weight: 200;}
+h7{font-size: 32px; font-weight: 200;}
+
+p,pre{font-size: 24px; font-weight: 100;}
+
+.ta_left{text-align: left;}
+.ta_right{text-align: right;}
+.ta_center{text-align: center;}
+/*Grid*/
+.page_container{
+    display: block;
+    width: 88%;
+    margin: auto;
+}
+
+.row{display: inline-flex;}
+.column{display: inline-block; padding: 1%;}
+
+/*For Large Screens*/
+
+@media (min-width: 1024px) {
+    .large12{width: 100%;}
+    .large11{width: 91.666666666666666666666666666667%;}
+    .large10{width: 83.3333333333333333333333333333333%;}
+    .large9{width: 75%;}
+    .large8{width: 66.666666666666666666666666666667%;}
+    .large7{width: 58.3333333333333333333333333333333%;}
+    .large6{width: 50%;}
+    .large5{width: 41.666666666666666666666666666667%;}
+    .large4{width: 33.333333333333333333333333333333%;}
+    .large3{width: 25%;}
+    .large2{width: 16.666666666666666666666666666667%;}
+    .large1{width: 8.333333333333333333333333333333%;}
+}
+
+/*For Medium Screens*/
+
+@media (min-width: 640px) and (max-width: 1023px) {
+    .medium12,.medium11{width: 100%;}
+    .medium10{width: 83.3333333333333333333333333333333%;}
+    .medium9{width: 75%;}
+    .medium8,.medium7{width: 66.666666666666666666666666666667%;}
+    .medium6,.medium5{width: 50%;}
+    .medium4,.medium3{width: 33.333333333333333333333333333333%;}
+    .medium2{width:25%;}
+    .medium1{width: 16.666666666666666666666666666667%;}
+}
+
+/*For Small Screens*/
+
+@media (min-width: 320px) and (max-width: 639px) {
+    .small12,.small11{width: 100%;}
+    .small10{width: 83.3333333333333333333333333333333%;}
+    .small9{width: 75%;}
+    .small8,.small7{width: 66.666666666666666666666666666667%;}
+    .small6,.small5{width: 50%;}
+    .small4,.small3{width: 33.333333333333333333333333333333%;}
+    .small2{width:25%;}
+    .small1{width: 16.666666666666666666666666666667%;}
+}
+
