@@ -3,6 +3,7 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    outline: none;
 }
 
 /*Typography*/
@@ -28,6 +29,9 @@ p,pre{font-size: 24px; font-weight: 100;}
 
 .row{display: inline-flex;}
 .column{display: inline-block; padding: 1%;}
+.center{display: block; margin: auto;}
+.left{display: block; float: left;}
+.right{display: block; float: right;}
 
 /*For Large Screens*/
 
@@ -111,3 +115,13 @@ p,pre{font-size: 24px; font-weight: 100;}
 
 .secondary_blue{background: #06A7DD; color:#FFF;}
 .secondary_green{background: #06A77D; color:#FFF;}
+
+/*Controls*/
+/*Buttons*/
+
+button{
+    background: rgba(125, 125, 125, 0.5);
+    border: none;
+    padding: 2%;
+}
+button.large{width: 60%; height: 10%;}
