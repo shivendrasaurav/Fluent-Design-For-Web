@@ -7,22 +7,40 @@
         <link href="fluent.css" rel="stylesheet" type="text/css">
         <link href="Icons/css/fluent-icons.css" rel="stylesheet" type="text/css">
         <script src="fluent.js"></script>
+
     </head>
     <body>
         <div class="page_container">
             <h2>Basic Inputs</h2>
             <div class="column large6 medium6 small12">
-            <input type="text" placeholder="Text Input"><br><br>
-            <input type="password" placeholder="Password Input"><br><br>
-            <input type="tel" placeholder="Tel Input"><br><br>
-            <input type="number" placeholder="Number Input"><br><br>
+                <input type="text" placeholder="Text Input"><br><br>
+                <input type="password" placeholder="Password Input"><br><br>
+                <input type="tel" placeholder="Tel Input"><br><br>
+                <input type="number" placeholder="Number Input"><br><br>
             </div>
             <div class="column large6 medium6 small12 right">
-            <input type="email" placeholder="Email Input"><br><br>
-            <input type="date" placeholder="Date Input"><br><br>
-            <input type="datetime-local" placeholder="Datetime Local Input"><br><br>
-            <input type="month" placeholder="Month Input"><br><br>
+                <input type="email" placeholder="Email Input"><br><br>
+                <input type="date" placeholder="Date Input"><br><br>
+                <input type="datetime-local" placeholder="Datetime Local Input"><br><br>
+                <input type="month" placeholder="Month Input"><br><br>
             </div>
         </div>
+        <div class="page_container">
+            <h2>More Inputs</h2>
+            <div class="column large6 medium6 small12">
+                    <span style="font-size: 36px; font-weight: 200">Range</span><br><br><br>
+                <input type="range" placeholder="Text Input" id="slider" oninput="slidervalue()"><br><br>
+                <button id="slidervalue" class="zi2"></button><br><br>
+            </div>
+        </div>
+        <script>
+                var slider = document.getElementById("slider");
+                var output = document.getElementById("slidervalue");
+                output.innerHTML = slider.value;
+    
+                slider.oninput = function() {
+                output.innerHTML = this.value;
+                }
+        </script>
         </body>
 </html>

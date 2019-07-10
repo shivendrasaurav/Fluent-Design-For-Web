@@ -125,7 +125,7 @@ a:hover:before,.link:hover::before{width: 100%; transition: 1s ease;}
 /*Buttons*/
 
 button{
-    background: rgba(125, 125, 125, 0.5);
+    background: rgba(125, 125, 125, 0.4);
     border: none;
     padding: 2%;
 }
@@ -151,3 +151,38 @@ input[type=email]:focus,input[type=date]:focus,input[type=datetime-local]:focus,
     border: 1.5px solid rgba(6, 167, 221, 1);
 }
 
+input[type=range]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    background: rgba(125, 125, 125, 0.4);
+    height: 1%;
+}
+input[type=range]:hover{background: rgba(125, 125, 125, 0.6);}
+
+input[type=range]::-moz-range-thumb{
+    -moz-appearance: none;
+    height: 24px;
+    width: 8px;
+    border-radius: 100px;
+    background: rgba(6, 167, 221, 1);
+}
+input[type=range]:focus::-moz-range-thumb{background: rgba(125, 125, 125, 0.6);}
+input[type=range]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 24px;
+    width: 8px;
+    border-radius: 100px;
+    background: rgba(6, 167, 221, 1);
+}
+input[type=range]:focus::-webkit-slider-thumb{background: rgba(125, 125, 125, 0.6);}
+input[type=range]::-ms-thumb{
+    -ms-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
+    height: 24px;
+    width: 8px;
+    border-radius: 100px;
+    background: rgb(0, 0, 0);
+}
+input[type=range]::-ms-fill-lower{background: #06A7DD;}
