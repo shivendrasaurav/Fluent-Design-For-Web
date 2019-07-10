@@ -15,7 +15,7 @@ h5{font-size: 48px; font-weight: 200;}
 h6{font-size: 36px; font-weight: 200;}
 h7{font-size: 32px; font-weight: 200;}
 
-p,pre{font-size: 24px; font-weight: 100;}
+a,p,pre{font-size: 24px; font-weight: 100;}
 
 .ta_left{text-align: left;}
 .ta_right{text-align: right;}
@@ -117,6 +117,11 @@ p,pre{font-size: 24px; font-weight: 100;}
 .secondary_green{background: #06A77D; color:#FFF;}
 
 /*Controls*/
+
+a,.link{color:#000; position: relative; z-index: 0; text-decoration-color: #06A7DD;}
+a:before,.link:before{position: absolute; background: #06955B; z-index: 1; width: 0%; height: 10%; content: '';left:0; bottom:2; transition:1s ease;}
+a:hover:before,.link:hover::before{width: 100%; transition: 1s ease;}
+
 /*Buttons*/
 
 button{
