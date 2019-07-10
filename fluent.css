@@ -74,29 +74,40 @@ p,pre{font-size: 24px; font-weight: 100;}
 
 /*Elevation*/
 
-.zi{z-index: 0; box-shadow:  0 0.1px 0.2px 0 rgba(0, 0, 0, 0.2), 0 0.1px 0.3px 0 rgba(0, 0, 0, 0.19); transition: 250s ease;}
+.zi{z-index: 0; box-shadow:  0 0.1px 0.4px 0 rgba(0, 0, 0, 0.4), 0 0.1px 0.3px 0 rgba(0, 0, 0, 0.38); transition: 250s ease;}
 .zi1{
     z-index: 1;
-    box-shadow:  0 0.5px 1px 0 rgba(0, 0, 0, 0.2), 0 0.3px 1px 0 rgba(0, 0, 0, 0.19);
+    box-shadow:  0 0.4px 1px 0 rgba(0, 0, 0, 0.4), 0 0.3px 1px 0 rgba(0, 0, 0, 0.38);
     transition: 250ms ease;
 }
 .zi2{
     z-index: 2;
-    box-shadow:  0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 6px 0 rgba(0, 0, 0, 0.19);
+    box-shadow:  0 2px 4px 0 rgba(0, 0, 0, 0.4), 0 2px 6px 0 rgba(0, 0, 0, 0.38);
     transition: 250ms ease;
 }
 .zi3{
     z-index: 3;
-    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 12px 0 rgba(0, 0, 0, 0.19);
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 4px 12px 0 rgba(0, 0, 0, 0.38);
     transition: 250ms ease;
 }
 .zi4{
     z-index: 4;
-    box-shadow:  0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 8px 24px 0 rgba(0, 0, 0, 0.19);
+    box-shadow:  0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 8px 24px 0 rgba(0, 0, 0, 0.38);
     transition: 250ms ease;
 }
-.zi:hover{box-shadow:  0.5px 0 1px 0 rgba(0, 0, 0, 0.2), 0 0.5px 1.5px 0 rgba(0, 0, 0, 0.19); transition: 250ms;}
-.zi1:hover{box-shadow:  1.5px 0 3px 0 rgba(0, 0, 0, 0.2), 0 1.5px 4.5px 0 rgba(0, 0, 0, 0.19); transition: 250ms;}
-.zi2:hover{box-shadow:  3px 0 6px 0 rgba(0, 0, 0, 0.2), 0 3px 9px 0 rgba(0, 0, 0, 0.19); transition: 250ms;}
-.zi3:hover{box-shadow:  6px 0 12px 0 rgba(0, 0, 0, 0.2), 0 4px 12px 0 rgba(0, 0, 0, 0.19); transition: 250ms;}
-.zi4:hover{box-shadow:  12px 0 24px 0 rgba(0, 0, 0, 0.2), 0 6px 18px 0 rgba(0, 0, 0, 0.19); transition: 250ms;}
+.zi:hover{box-shadow:  0.4px 0 1px 0 rgba(0, 0, 0, 0.4), 0 0.4px 1.5px 0 rgba(0, 0, 0, 0.38); transition: 250ms;}
+.zi1:hover{box-shadow:  1.5px 0 3px 0 rgba(0, 0, 0, 0.4), 0 1.5px 4.5px 0 rgba(0, 0, 0, 0.38); transition: 250ms;}
+.zi2:hover{box-shadow:  3px 0 6px 0 rgba(0, 0, 0, 0.4), 0 3px 9px 0 rgba(0, 0, 0, 0.38); transition: 250ms;}
+.zi3:hover{box-shadow:  6px 0 12px 0 rgba(0, 0, 0, 0.4), 0 4px 12px 0 rgba(0, 0, 0, 0.38); transition: 250ms;}
+.zi4:hover{box-shadow:  12px 0 24px 0 rgba(0, 0, 0, 0.4), 0 6px 18px 0 rgba(0, 0, 0, 0.38); transition: 250ms;}
+
+/*Colors*/
+.primary_blue{background: #08415C; color:#FFF;}
+.primary_green{background: #28B88E; color:#FFF;}
+.primary_red{background: #CC2936; color:#FFF;}
+.primary_yellow{background: #CCC908; color:#1A1A1A;}
+.primary_inverted{background: #1E1E1E; color:#FFF;}
+
+
+.secondary_blue{background: #06A7DD; color:#FFF;}
+.secondary_green{background: #06A77D; color:#FFF;}
