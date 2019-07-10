@@ -151,6 +151,7 @@ input[type=email]:focus,input[type=date]:focus,input[type=datetime-local]:focus,
     border: 1.5px solid rgba(6, 167, 221, 1);
 }
 
+/*Slider*/
 input[type=range]{
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -191,13 +192,92 @@ input[type=radio],.radioinfo{
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
-    width: 32px;
-    height: 32px;
-    background: rgba(125, 125, 125, 0.4);
+    width: 25px;
+    height: 25px;
+    background: #FFF;
     border-radius: 90px;
-    border:2px solid #06A7DD;
+    border:2px solid #000;
     margin-left: 5%;
     margin-right: 5%;
 }
 input[type=radio]:hover{background: rgba(125, 125, 125, 0.6);}
-input[type=radio]:checked{background: #06A7DD; border: 2px solid rgba(125, 125, 125, 0.6);}
+input[type=radio]:checked{background: rgba(0, 0, 0, 0.8); border: 5px solid #FFF; box-shadow: 0px 0px 2px 2px #06A7DD}
+
+/*Switch*/
+
+.switch{
+    width: 0px;
+    height: 0px;
+    background: #eee;
+    border-radius: 90px;
+    opacity: 1;
+}
+
+.switch input{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    z-index: 1;
+    position: absolute;
+    cursor: pointer;
+    width: 50px;
+    height: 24px;
+    border-radius: 90px;
+    border: 2px solid rgba(0, 0, 0, 0.6);
+}
+
+.toggle{
+    position: absolute;
+    background: #000;
+    z-index: 2;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 90px;
+    margin: 4px;
+}
+
+.switch input:checked ~ .toggle{
+    background: #FFF;
+    transform: translateX(25px);
+}
+.switch input:checked{
+    background:#06A7DD;
+    border: none;
+}
+
+/*Checkbox*/
+.check{
+    display: block;
+    position: relative;
+    user-select: none;
+}
+
+.check input{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    z-index: 1;
+    opacity: 1;
+    position: absolute;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+}
+.checkmark{
+    color: transparent;
+    z-index: 0;
+    display: inline-block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+}
+.check input:hover{border:2px solid #000}
+
+.check input:checked ~ .checkmark{
+    background: #06A7DD;
+    color: #FFF;
+    font-weight: bold;
+    border: 2px solid #06A7DD;
+}

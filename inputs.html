@@ -27,7 +27,7 @@
         </div>
         <div class="page_container">
             <h2>More Inputs</h2>
-            <div class="column large6 medium6 small12">
+            <div class="column large6 medium10 small12">
                 <span style="font-size: 36px; font-weight: 200">Range</span><br><br><br>
                 <input type="range" placeholder="Text Input" id="slider"><br><br>
                 <button id="slidervalue" class="zi2"></button><br><br><br>
@@ -38,6 +38,38 @@
                 <input type="radio" name="rating" value="4" onclick="document.getElementById('ratingvalue').innerHTML = 4">
                 <input type="radio" name="rating" value="5" onclick="document.getElementById('ratingvalue').innerHTML = 5"><br><br>
                 <button id="ratingvalue" class="zi2">0</button><br><br><br>
+            </div>
+            <div class="column large6 medium10 small12">
+                <span style="font-size: 36px; font-weight: 200">Switch</span><br><br><br>
+                <div  class="column large6 medium4 small4">
+                    <p>On Switch</p>
+                    <div class="switch">
+                            <input type="checkbox" checked/>
+                            <span class="toggle"></span>
+                    </div>
+                </div>
+                <div  class="column large6 medium4 small4">
+                    <p>Off Switch</p>
+                    <div class="switch">
+                            <input type="checkbox"/>
+                            <span class="toggle"></span>
+                    </div>
+                </div><br><br><br><br><br>
+                <span style="font-size: 36px; font-weight: 200">Checkbox</span><br><br><br>
+                <div  class="column large6 medium4 small4">
+                    <p>Checked</p>
+                    <div class="check">Checked : &nbsp;&nbsp;
+                            <input type="checkbox" checked/>
+                            <button class="checkmark"><i class="ms-Icon ms-Icon--Accept" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+                <div  class="column large6 medium4 small4">
+                    <p>Unchecked</p>
+                    <div class="check">Unchecked : &nbsp;&nbsp;
+                            <input type="checkbox"/>
+                            <button class="checkmark"><i class="ms-Icon ms-Icon--Accept" aria-hidden="true"></i></button>
+                    </div>
+                </div>
             </div>
         </div>
         <script>
