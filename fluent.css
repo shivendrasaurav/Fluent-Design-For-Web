@@ -186,3 +186,18 @@ input[type=range]::-ms-thumb{
     background: rgb(0, 0, 0);
 }
 input[type=range]::-ms-fill-lower{background: #06A7DD;}
+
+input[type=radio],.radioinfo{
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    width: 32px;
+    height: 32px;
+    background: rgba(125, 125, 125, 0.4);
+    border-radius: 90px;
+    border:2px solid #06A7DD;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+input[type=radio]:hover{background: rgba(125, 125, 125, 0.6);}
+input[type=radio]:checked{background: #06A7DD; border: 2px solid rgba(125, 125, 125, 0.6);}

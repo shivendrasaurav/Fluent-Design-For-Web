@@ -28,9 +28,16 @@
         <div class="page_container">
             <h2>More Inputs</h2>
             <div class="column large6 medium6 small12">
-                    <span style="font-size: 36px; font-weight: 200">Range</span><br><br><br>
-                <input type="range" placeholder="Text Input" id="slider" oninput="slidervalue()"><br><br>
-                <button id="slidervalue" class="zi2"></button><br><br>
+                <span style="font-size: 36px; font-weight: 200">Range</span><br><br><br>
+                <input type="range" placeholder="Text Input" id="slider"><br><br>
+                <button id="slidervalue" class="zi2"></button><br><br><br>
+                <span style="font-size: 36px; font-weight: 200">Rating</span><br><br><br>
+                <input type="radio" name="rating" value="1" onclick="document.getElementById('ratingvalue').innerHTML = 1">
+                <input type="radio" name="rating" value="2" onclick="document.getElementById('ratingvalue').innerHTML = 2">
+                <input type="radio" name="rating" value="3" onclick="document.getElementById('ratingvalue').innerHTML = 3">
+                <input type="radio" name="rating" value="4" onclick="document.getElementById('ratingvalue').innerHTML = 4">
+                <input type="radio" name="rating" value="5" onclick="document.getElementById('ratingvalue').innerHTML = 5"><br><br>
+                <button id="ratingvalue" class="zi2">0</button><br><br><br>
             </div>
         </div>
         <script>
