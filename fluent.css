@@ -7,13 +7,13 @@
 }
 
 /*Typography*/
-h1{font-size: 90px; font-weight: 200;}
-h2{font-size: 80px; font-weight: 200;}
-h3{font-size: 72px; font-weight: 200;}
-h4{font-size: 64px; font-weight: 200;}
-h5{font-size: 48px; font-weight: 200;}
-h6{font-size: 36px; font-weight: 200;}
-h7{font-size: 32px; font-weight: 200; padding: none;}
+h1{font-size: 90px; font-weight: 200; margin: 10px;}
+h2{font-size: 80px; font-weight: 200; margin: 10px;}
+h3{font-size: 72px; font-weight: 200; margin: 10px;}
+h4{font-size: 64px; font-weight: 200; margin: 10px;}
+h5{font-size: 48px; font-weight: 200; margin: 10px;}
+h6{font-size: 36px; font-weight: 200; margin: 10px;}
+h7{font-size: 32px; font-weight: 200; margin: 10px;}
 
 a,p,pre{font-size: 24px; font-weight: 100;}
 
