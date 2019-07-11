@@ -16,20 +16,53 @@
                 document.getElementById("mod1").style.display="None";
                 document.getElementById("body").style.filter="blur(0px)";
             }
+            function openside1(){
+                document.getElementById("side1").style.display="Block";
+                document.getElementById("body").style.filter="blur(5px)";
+            }
+            function closeside1(){
+                document.getElementById("side1").style.display="None";
+                document.getElementById("body").style.filter="blur(0px)";
+            }
         </script>
     </head>
-    <body onload="closemod1();">
+    <body onload="closemod1(); closeside1();">
         <div class="page_container" id="body">
             <h2>Surfaces</h2>
-            <h7>Modal</h7>
-            <p>Click On The Button Below To Open Modal</p>
-            <button class="primary_yellow" onclick="openmod1();">Open Modal</button>
+            <h7>Window</h7>
+            <p>Click On The Button Below To Open Window</p>
+            <button class="primary_yellow" onclick="openmod1();">Open Window</button><br><br>
+            <h7>Side Panel</h7>
+            <p>Click On The Button Below To Open Side Panel On Left</p>
+            <button class="primary_yellow" onclick="openside1();">Open Side Panel</button><br><br>
+            <h7>Tooltip</h7>
+            <p>Hover Over The Button Below To See What Action It Will Perform</p>
+            <div class="tooltip_container">
+                <span class="tooltip_info">When you hover over the button, you see me</span>
+                <button class="primary_yellow tooltip">Tooltip</button>
+            </div>
         </div>
-        <div class="modal_container" id="mod1">
-                <div class="modal_content" id="modct1">
+            <div class="modal_container" id="mod1">
+                <div class="modal_content zi1" id="modct1">
                     <button class="primary_red right ta_center" onclick="closemod1();" style="padding: 10px; padding-left: 20px; padding-right: 20px;">X</button>
+                    <div class="page_container">
                         <h1>This Is Some Content</h1>
+                    </div>
                 </div>
             </div>
+            <div class="sidepanel_container" id="side1">
+                <div class="sidepanel_content zi3 right" id="modct1">
+                    <button class="primary_red right ta_center" onclick="closeside1();" style="padding: 10px; padding-left: 20px; padding-right: 20px;">X</button><br><br><br><br>
+                    <div class="page_container">
+                        <div class="large12 panel_item">Panel Item 1</div>
+                        <div class="large12 panel_item">Panel Item 2</div>
+                        <div class="large12 panel_item">Panel Item 3</div>
+                        <div class="large12 panel_item">Panel Item 4</div>
+                        <div class="large12 panel_item">Panel Item 5</div>
+                        <div class="large12 panel_item">Panel Item 6</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
