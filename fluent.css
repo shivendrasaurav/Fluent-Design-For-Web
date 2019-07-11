@@ -13,7 +13,7 @@ h3{font-size: 72px; font-weight: 200;}
 h4{font-size: 64px; font-weight: 200;}
 h5{font-size: 48px; font-weight: 200;}
 h6{font-size: 36px; font-weight: 200;}
-h7{font-size: 32px; font-weight: 200;}
+h7{font-size: 32px; font-weight: 200; padding: none;}
 
 a,p,pre{font-size: 24px; font-weight: 100;}
 
@@ -282,10 +282,29 @@ input[type=radio]:checked{background: rgba(0, 0, 0, 0.8); border: 5px solid #FFF
     border: 2px solid #06A7DD;
 }
 /*lists and tables*/
-li{
-    appearance: none;
+ol{
+    list-style: none;
+    counter-reset: fluent-counter;
 }
-
+ul{list-style: none;}
+ol li{
+    counter-increment: fluent-counter;
+    padding: 10px;
+    border: none;
+    transition: 200ms;
+}
+ul li{
+    padding: 10px;
+    border: none;
+    transition: 200ms;
+}
+ol li::before{
+    content: counter(fluent-counter)".";
+    padding-right: 20px;
+}
+li:nth-child(even) {background-color: rgba(6, 167, 221, 0.6)}
+li:nth-child(odd) {background-color:  rgba(0, 0, 0, 0.3);}
+li:hover{border-left: 4px solid #000; transition: 200ms;}
 /*Progress*/
 .simple_progress_bar{
     position: relative;
