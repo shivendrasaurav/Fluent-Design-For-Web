@@ -367,7 +367,7 @@ li:hover{border-left: 4px solid #000; transition: 200ms; background: rgba(0, 0, 
     left: 0;
     right: 0;
     z-index: 10;
-    -webkit-backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
 }
 .modal_content{
     display: block;
@@ -375,9 +375,11 @@ li:hover{border-left: 4px solid #000; transition: 200ms; background: rgba(0, 0, 
     width: 75%;
     height: 80%;
     background: #FFF;
-    overflow-y: scroll;
+    overflow-y: auto;
     margin-top: 5%;
+    scrollbar-width: 0px;
 }
+.modal_container::-webkit-scrollbar{display: none;}
 .sidepanel_container{
     background: rgba(255, 255, 255, 0.6);
     position: fixed;
@@ -386,7 +388,7 @@ li:hover{border-left: 4px solid #000; transition: 200ms; background: rgba(0, 0, 
     left: 0;
     right: 0;
     z-index: 11;
-    -webkit-backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
 }
 .sidepanel_content{
     width: 320px;
@@ -402,7 +404,6 @@ li:hover{border-left: 4px solid #000; transition: 200ms; background: rgba(0, 0, 
 .panel_item:hover{background: rgba(125, 125, 125, 0.2); transition: 200ms;}
 .panel_item:focus,.panel_item:active{background: rgba(125, 125, 125, 0.25); border-left: 4px solid #000; transition: 200ms;}
 
-.tooltip{position: absolute;}
 .tooltip_info{
     border: 0.5px solid;
     border-radius: 5px;
@@ -417,4 +418,25 @@ li:hover{border-left: 4px solid #000; transition: 200ms; background: rgba(0, 0, 
     opacity: 0;
     margin-top:-50px;
 }
-.tooltip_container:hover .tooltip_info{opacity: 1; width: auto; height: auto; font-size: 16px; padding: 15px; overflow-y: scroll;}
+.tooltip_container:hover .tooltip_info{opacity: 1; width: auto; height: auto; font-size: 16px; padding: 15px; overflow-y: auto;}
+
+.dialogue_box{
+    z-index: 12;
+    position: absolute;
+    top:60%;
+    left: 40%;
+    min-width: 25%;
+    min-height: 15%;
+    border:2px solid rgba(125, 125, 125, 0.9);
+    display: none;
+    box-shadow:  6px 0 12px 0 rgba(0, 0, 0, 0.4), 0 4px 12px 0 rgba(0, 0, 0, 0.38);
+}
+.dialogue_pane{
+    height: 38px;
+    background: rgba(125, 125, 125, 0.9);
+    cursor: move;
+}
+.dialogue_content{
+    padding: 5px;
+    background: #FFF;
+}

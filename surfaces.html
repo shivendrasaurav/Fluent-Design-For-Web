@@ -7,6 +7,8 @@
         <link href="fluent.css" rel="stylesheet" type="text/css">
         <link href="Icons/css/fluent-icons.css" rel="stylesheet" type="text/css">
         <script src="fluent.js"></script>
+        <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
         <script>
             function openmod1(){
                 document.getElementById("mod1").style.display="Block";
@@ -24,6 +26,15 @@
                 document.getElementById("side1").style.display="None";
                 document.getElementById("body").style.filter="blur(0px)";
             }
+            function opendialog1(){
+                document.getElementById("dialog1").style.display="Block";
+            }
+            function closedialog1(){
+                document.getElementById("dialog1").style.display="None";
+            }
+            $(function() {
+            $( ".dialogue_box" ).draggable();
+            });
         </script>
     </head>
     <body onload="closemod1(); closeside1();">
@@ -39,14 +50,21 @@
             <p>Hover Over The Button Below To See What Action It Will Perform</p>
             <div class="tooltip_container">
                 <span class="tooltip_info">When you hover over the button, you see me</span>
-                <button class="primary_yellow tooltip">Tooltip</button>
+                <button class="primary_yellow">Tooltip</button>
+            </div><br><br>
+            <h7>Dialogue</h7>
+            <p>Click On The Button Below To Open Draggable Dialogue Box</p>
+            <button class="primary_yellow" onclick="opendialog1();">Open Dialogue Box</button>
+            <div class="dialogue_box" id="dialog1">
+                <div class="dialogue_pane large12"><button class="primary_red right ta_center" onclick="closedialog1();" style="padding: 10px; padding-left: 20px; padding-right: 20px;">X</button></div>
+                <div class="dialogue_content large12">This Is A Dialogue Box</div>
             </div>
         </div>
             <div class="modal_container" id="mod1">
                 <div class="modal_content zi3" id="modct1">
-                    <button class="primary_red right ta_center" onclick="closemod1();" style="padding: 10px; padding-left: 20px; padding-right: 20px;">X</button>
+                        <div class="dialogue_pane large12"><button class="primary_red right ta_center" onclick="closemod1();" style="padding: 10px; padding-left: 20px; padding-right: 20px;">X</button></div>
                     <div class="page_container">
-                        <h1>This Is Some Content</h1>
+                        <h2>This Is Some Content</h2>
                     </div>
                 </div>
             </div>
