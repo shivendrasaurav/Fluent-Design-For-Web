@@ -1,5 +1,5 @@
 *{
-    font-family:  'Segoe UI', 'Product Sans', 'Roboto', sans-serif;
+    font-family:  'Segoe UI', 'Helvetica Neue', 'Product Sans', 'Roboto', sans-serif;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -281,3 +281,62 @@ input[type=radio]:checked{background: rgba(0, 0, 0, 0.8); border: 5px solid #FFF
     font-weight: bold;
     border: 2px solid #06A7DD;
 }
+
+/*Progress*/
+.simple_progress_bar{
+    position: relative;
+    width: 80%;
+    height: 2%;
+    background: rgba(0, 0, 0, 0.4);
+}
+.simple_progress_bar:hover,.indeterminate_progress_bar:hover{background: rgba(0, 0, 0, 0.6);}
+.simple_progress_bar::before{
+    position: absolute;
+    content: ' ';
+    width: 0%;
+    height: 100%;
+    background: radial-gradient(circle at 95%, #08415C, #06A7DD);
+    animation: simple 2.5s infinite linear;
+}
+@keyframes simple{
+    0%{width: 0%;}
+    100%{width: 100%;}
+}
+
+.indeterminate_progress_bar{
+    position: relative;
+    width: 80%;
+    height: 2%;
+    background: rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+.indeterminate_progress_bar::before{
+    position: absolute;
+    content: ' ';
+    width: 30%;
+    height: 100%;
+    background: radial-gradient(circle at 50%, #08415C, #06A7DD, transparent);
+    animation: intderminate 2.5s infinite linear;
+    margin-left: -12.5%;
+}
+@keyframes intderminate{
+    0%{transform: translateX(0%);}
+    100%{transform: translateX(350%);}
+}
+.spinner{
+    border-radius: 100%;
+    animation: spin 1s infinite linear;
+    border: 4px solid rgba(0, 0, 0, 0.4);
+    border-top: 4px solid #06A7DD;
+}
+@keyframes spin{
+    0%{transform:rotateZ(0deg);}
+    25%{transform:rotateZ(90deg);}
+    50%{transform:rotateZ(180deg);}
+    75%{transform:rotateZ(270deg);}
+    100%{transform:rotateZ(360deg);}
+}
+.xs{width: 20px; height: 20px;}
+.s{width: 32px; height: 32px;}
+.m{width: 44px; height: 44px;}
+.l{width: 60px; height: 60px;}
