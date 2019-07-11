@@ -282,10 +282,8 @@ input[type=radio]:checked{background: rgba(0, 0, 0, 0.8); border: 5px solid #FFF
     border: 2px solid #06A7DD;
 }
 /*lists and tables*/
-.a4:hover{
-    background-color: gray;
-    border-left-width:3px;
-    border-left-color:#06A7DD;
+li{
+    appearance: none;
 }
 
 /*Progress*/
