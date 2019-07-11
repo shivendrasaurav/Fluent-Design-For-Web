@@ -1,5 +1,5 @@
 *{
-    font-family:  'Segoe UI', 'Product Sans', 'Roboto', sans-serif;
+    font-family:  'Segoe UI', 'Helvetica Neue', 'Product Sans', 'Roboto', sans-serif;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -286,5 +286,4 @@ input[type=radio]:checked{background: rgba(0, 0, 0, 0.8); border: 5px solid #FFF
     background-color: gray;
     border-left-width:3px;
     border-left-color:#06A7DD;
-    }
-
+}
