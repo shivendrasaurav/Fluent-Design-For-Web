@@ -302,9 +302,9 @@ ol li::before{
     content: counter(fluent-counter)".";
     padding-right: 20px;
 }
-li:nth-child(even) {background-color: rgba(6, 167, 221, 0.6)}
-li:nth-child(odd) {background-color:  rgba(0, 0, 0, 0.3);}
-li:hover{border-left: 4px solid #000; transition: 200ms;}
+li:nth-child(odd) {background-color: rgba(6, 167, 221, 0.7); color: #FFF; backdrop-filter: blur(90px);}
+li:nth-child(even) {background-color:  rgba(0, 0, 0, 0.6); color: #FFF; backdrop-filter: blur(90px);}
+li:hover{border-left: 4px solid #000; transition: 200ms; background: rgba(0, 0, 0, 0.4);}
 /*Progress*/
 .simple_progress_bar{
     position: relative;
@@ -354,12 +354,31 @@ li:hover{border-left: 4px solid #000; transition: 200ms;}
 }
 @keyframes spin{
     0%{transform:rotateZ(0deg);}
-    25%{transform:rotateZ(90deg);}
-    50%{transform:rotateZ(180deg);}
-    75%{transform:rotateZ(270deg);}
     100%{transform:rotateZ(360deg);}
 }
 .xs{width: 20px; height: 20px;}
 .s{width: 32px; height: 32px;}
 .m{width: 44px; height: 44px;}
 .l{width: 60px; height: 60px;}
+
+/*Surfaces*/
+
+.modal_container{
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top:0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    -webkit-backdrop-filter: blur(5px);
+}
+.modal_content{
+    display: block;
+    margin: auto;
+    width: 75%;
+    height: 80%;
+    background: #FFF;
+    overflow-y: scroll;
+    margin-top: 5%;
+}

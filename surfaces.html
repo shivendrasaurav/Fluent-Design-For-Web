@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Fluent Design For Web</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Product+Sans" rel="stylesheet">
+        <link href="normalize.css" rel="stylesheet" type="text/css">
+        <link href="fluent.css" rel="stylesheet" type="text/css">
+        <link href="Icons/css/fluent-icons.css" rel="stylesheet" type="text/css">
+        <script src="fluent.js"></script>
+        <script>
+            function openmod1(){
+                document.getElementById("mod1").style.display="Block";
+                document.getElementById("body").style.filter="blur(5px)";
+            }
+            function closemod1(){
+                document.getElementById("mod1").style.display="None";
+                document.getElementById("body").style.filter="blur(0px)";
+            }
+        </script>
+    </head>
+    <body onload="closemod1();">
+        <div class="page_container" id="body">
+            <h2>Surfaces</h2>
+            <h7>Modal</h7>
+            <p>Click On The Button Below To Open Modal</p>
+            <button class="primary_yellow" onclick="openmod1();">Open Modal</button>
+        </div>
+        <div class="modal_container" id="mod1">
+                <div class="modal_content" id="modct1">
+                    <button class="primary_red right ta_center" onclick="closemod1();" style="padding: 10px; padding-left: 20px; padding-right: 20px;">X</button>
+                        <h1>This Is Some Content</h1>
+                </div>
+            </div>
+    </body>
+</html>
