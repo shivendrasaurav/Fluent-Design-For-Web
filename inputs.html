@@ -48,13 +48,15 @@
                             <span class="toggle"></span>
                     </div>
                 </div>
-                <div  class="column large6 medium4 small4">
+                <div  class="column large6 medium4 small4 right">
                     <p>Off Switch</p>
                     <div class="switch">
                             <input type="checkbox"/>
                             <span class="toggle"></span>
                     </div>
                 </div><br><br><br><br><br>
+            </div>
+            <div class="column large6 medium10 small12 right">
                 <span style="font-size: 36px; font-weight: 200">Checkbox</span><br><br><br>
                 <div  class="column large6 medium4 small4">
                     <p>Checked</p>
@@ -63,13 +65,45 @@
                             <button class="checkmark"><i class="ms-Icon ms-Icon--Accept" aria-hidden="true"></i></button>
                     </div>
                 </div>
-                <div  class="column large6 medium4 small4">
+                <div  class="column large6 medium4 small4 right">
                     <p>Unchecked</p>
                     <div class="check">Unchecked : &nbsp;&nbsp;
                             <input type="checkbox"/>
                             <button class="checkmark"><i class="ms-Icon ms-Icon--Accept" aria-hidden="true"></i></button>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="page_container">
+            <h2>Advanced Inputs</h2>
+            <div class="column large6 medium6 small12">
+                    <span style="font-size: 36px; font-weight: 200">Searchbox</span><br><br><br>
+                    <span class="search_box" tabindex="1234">
+                    <button><i class="ms-Icon ms-Icon--Search" aria-hidden="true"></i></button>
+                    <input type="search" placeholder="Search">
+                    </span><br><br>
+            </div>
+            <div class="column large6 medium6 small12 right">
+                    <span style="font-size: 36px; font-weight: 200">Dropdown</span><br><br><br>
+                    <select>
+                    <option value="Option 1">Option 1</option>
+                    <option value="Option 2">Option 2</option>
+                    <option value="Option 3">Option 3</option>
+                    <option value="Option 4">Option 4</option>
+                </select>
+            </div>
+            <div class="column large6 medium6 small12">
+                    <span style="font-size: 36px; font-weight: 200">Dropdown Advanced</span><br><br><br>
+                    <div class="drop_container">
+                        <span class="drop_val" id="drop_value">Select an option</span><input class="drop" type="checkbox"><br>
+                        <div class="opt_group zi2">
+                            <span class="drop_val">Option a</span><input class="drop_opt" type="radio" name="dropdown" onclick="document.getElementById('drop_value').innerHTML = 'Option a'">
+                            <span class="drop_val">Option b</span><input class="drop_opt" type="radio" name="dropdown" onclick="document.getElementById('drop_value').innerHTML = 'Option b'">
+                            <span class="drop_val">Option c</span><input class="drop_opt" type="radio" name="dropdown" onclick="document.getElementById('drop_value').innerHTML = 'Option c'">
+                            <span class="drop_val">Option d</span><input class="drop_opt" type="radio" name="dropdown" onclick="document.getElementById('drop_value').innerHTML = 'Option d'">
+                            <span class="drop_val">Option e</span><input class="drop_opt" type="radio" name="dropdown" onclick="document.getElementById('drop_value').innerHTML = 'Option e'">
+                        </div>
+                    </div>
             </div>
         </div>
         <script>
