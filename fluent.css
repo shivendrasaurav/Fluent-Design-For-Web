@@ -125,8 +125,40 @@ button{
     background: rgba(125, 125, 125, 0.4);
     border: none;
     padding: 2%;
+    border: 1.5px solid transparent;
 }
-button.large{width: 60%; height: 10%;}
+button.large{width: 60%; height: 10%; font-size: 120%;}
+
+/*Frosted Buttons*/
+.frost_container {
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    font-size: 1.2em;
+    outline: none;
+    overflow: hidden;
+    height: 60px;
+    width: 140px;
+}
+.frost_container .frost {position: relative; pointer-events: none;}
+.frost_container::before {
+    --size: 0;
+    content: '';
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    width: var(--size);
+    height: var(--size);
+    background: radial-gradient(circle closest-side, rgba(125, 125, 125, 0.5), transparent);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition: width .05s ease, height .05s ease;
+}
+.frost_container:hover::before {--size: 180px;}
+.frost_container:active::before {--size: 4000px; transition: 200ms ease; background: radial-gradient(circle closest-side, rgba(125, 125, 125, 0.8), transparent);}
+.frost_container:hover{border: 1.5px solid transparent;}
 
 /*Inputs*/
 
@@ -186,7 +218,7 @@ select option{padding: 2%; white-space: normal;}
 .drop:hover{border: 1.5px solid rgba(0, 0, 0, 0.6);}
 .drop:checked{border: 1.5px solid rgba(6, 167, 221, 1);}
 .drop_val{ position: absolute; padding: 1%; z-index: 1;}
-.opt_group{width: 80%; display: none;}
+.opt_group{width: 80%; display: none; z-index: 1;}
 input[type=radio].drop_opt{
     position:relative;
     margin-left: 0px;
@@ -354,9 +386,9 @@ ol li::before{
     content: counter(fluent-counter)".";
     padding-right: 20px;
 }
-li:nth-child(odd) {background-color: rgba(6, 167, 221, 0.7); color: #FFF; backdrop-filter: blur(90px);}
-li:nth-child(even) {background-color:  rgba(0, 0, 0, 0.6); color: #FFF; backdrop-filter: blur(90px);}
-li:hover{border-left: 4px solid #000; transition: 200ms; background: rgba(0, 0, 0, 0.4);}
+li:nth-child(odd) {background-color: rgba(6, 167, 221, 0.4); color: #000; backdrop-filter: blur(90px);}
+li:nth-child(even) {background-color:  rgba(0, 0, 0, 0.4); color: #000; backdrop-filter: blur(90px);}
+li:hover{border-left: 4px solid #000; transition: 200ms; background: rgba(0, 0, 0, 0.6);}
 /*Progress*/
 .simple_progress_bar{
     position: relative;
@@ -495,4 +527,30 @@ li:hover{border-left: 4px solid #000; transition: 200ms; background: rgba(0, 0, 
 .dialogue_content{
     padding: 5px;
     background: #FFF;
+}
+/*Overlay*/
+img{width: 100%; height: auto;}
+
+.overlay_container:hover .overlay{
+    display: block;
+    opacity: 1;
+    transition: 300ms;
+}
+.overlay_container:hover .overlay_content{filter: blur(10px);}
+.overlay_container{
+    width: 80%;
+    position: relative;
+}
+.overlay{
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    position: absolute;
+    left:0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #FFF;
+    transition: 300ms;
 }
