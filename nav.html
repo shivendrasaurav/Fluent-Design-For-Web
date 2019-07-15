@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <title>Fluent Design For Web</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Product+Sans" rel="stylesheet">
+        <link href="normalize.css" rel="stylesheet" type="text/css">
+        <link href="fluent.css" rel="stylesheet" type="text/css">
+        <link href="Icons/css/fluent-icons.css" rel="stylesheet" type="text/css">
+        <script src="fluent.js"></script>
+    </head>
+    <body>
+        <div class="nav_container column large3 medium3 small0">
+            <h4>Side Navigation</h4>
+            <div class="navigation_container">
+                    <span class="navigation_val"><i class="ms-Icon ms-Icon--Chevronright nav_disp"></i>Side Menu 1</span><input checked type="checkbox" class="navigation_button">
+                    <div class="navigation_group">
+                        <a href="#"><li class="navigation_item">Item 1</li></a>
+                        <li class="navigation_item">Item 2</li>
+                        <li class="navigation_item">Item 3</li>
+                        <li class="navigation_item">Item 4</li>
+                    </div>
+                </div>
+            <div class="navigation_container">
+                <span class="navigation_val"><i class="ms-Icon ms-Icon--Chevronright nav_disp"></i>Side Menu 2</span><input type="checkbox" class="navigation_button">
+                <div class="navigation_group">
+                    <a href="#"><li class="navigation_item">Item 1</li></a>
+                    <li class="navigation_item">Item 2</li>
+                    <li class="navigation_item">Item 3</li>
+                    <li class="navigation_item">Item 4</li>
+                </div>
+            </div>
+            <div class="navigation_container">
+                <span class="navigation_val"><i class="ms-Icon ms-Icon--Chevronright nav_disp"></i>Side Menu 3</span><input type="checkbox" class="navigation_button">
+                <div class="navigation_group">
+                    <a href="#"><li class="navigation_item">Item 1</li></a>
+                    <li class="navigation_item">Item 2</li>
+                    <li class="navigation_item">Item 3</li>
+                    <li class="navigation_item">Item 4</li>
+                </div>
+            </div>
+            <div class="navigation_container">
+                <span class="navigation_val"><i class="ms-Icon ms-Icon--Chevronright nav_disp"></i>Side Menu 4</i></span><input type="checkbox" class="navigation_button">
+                <div class="navigation_group">
+                    <a href="#"><li class="navigation_item">Item 1</li></a>
+                    <li class="navigation_item">Item 2</li>
+                    <li class="navigation_item">Item 3</li>
+                    <li class="navigation_item">Item 4</li>
+                </div>
+            </div>
+        </div>
+        <div class="page_container column large9 medium9 small12 right">
+            <h2>Pivot Menu</h2>
+            <h7>This is an example Pivot Menu</h7><br><br>
+            <div class="pivot_container">
+                <button class="pivot_group icon circular left" onclick="history.back();">
+                    <i class="ms-Icon ms-Icon--Back" aria-hidden="true"></i>
+                </button>&nbsp;&nbsp;&nbsp;&nbsp;
+                <button class="pivot_group icon circular left" onclick="history.forward();">
+                    <i class="ms-Icon ms-Icon--Forward" aria-hidden="true"></i>
+                </button>
+                <button class="pivot_group right">
+                    <a href="#" class="pivot">Pivot_1</a>
+                </button>
+                <button class="pivot_group right">
+                    <a href="#" class="pivot">Pivot_2</a>
+                </button>
+                <button class="pivot_group right">
+                    <a href="#" class="pivot active">Pivot_Active</a>
+                </button>
+                <button class="pivot_group right">
+                    <a href="#" class="pivot">Pivot_3</a>
+                </button>
+            </div><br><br><br>
+            <h2>Command Bar</h2>
+            <h7>This is an example Command Bar</h7><br><br>
+            <div class="commandbar_container">
+                <button class="commandbar_button">Command_1</button>
+                <button class="commandbar_button">Command_2</button>
+                <button class="commandbar_button">Command_3</button>
+                <button class="commandbar_button">Command_4</button>
+            </div><br><br><br>
+            <h2>Breadcrumbs</h2>
+            <h7>This is a basic breadcrumb navigation bar</h7>
+            <ul class="breadcrumb_container">
+                <span class="breadcrumb_icon">></span><li class="breadcrumb">Folder 1</li>
+                <span class="breadcrumb_icon">></span><li class="breadcrumb">Folder 2</li>
+                <span class="breadcrumb_icon">></span><li class="breadcrumb">Folder 3</li>
+                <span class="breadcrumb_icon">></span><li class="breadcrumb">Folder 4</li>
+            </ul><br><br><br>
+            <h7>This is a breadcrumb navigation bar which uses links</h7>
+            <ul class="breadcrumb_container">
+                <span class="breadcrumb_icon">></span><a><li class="breadcrumb">Folder 1</li></a>
+                <span class="breadcrumb_icon">></span><a><li class="breadcrumb">Folder 2</li></a>
+                <span class="breadcrumb_icon">></span><a><li class="breadcrumb">Folder 3</li></a>
+                <span class="breadcrumb_icon">></span><a><li class="breadcrumb">Folder 4</li></a>
+            </ul><br><br><br>
+            <h2>Contextual Menu</h2>
+            <h7>Click on the button to display Contextual Menu</h7>
+            <div class="column large6 small12 medium5">
+                <div class="contextual_container">
+                    <span class="contextual_val">Click to open Contextual Menu</span><input type="checkbox" class="contextual_button">
+                    <div class="contextual_group">
+                        <a href="#"><li class="contextual_item">Item 1</li></a>
+                        <li class="contextual_item">Item 2</li>
+                        <li class="contextual_item">Item 3</li>
+                        <li class="contextual_item">Item 4</li>
+                        <hr>
+                        <li class="contextual_item">Item 5</li>
+                        <li class="contextual_item">Item 6</li>
+                        <li class="contextual_item">Item 7</li>
+                        <li class="contextual_item">Item 8</li>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column large12 medium12 small12 primary_red">Open in desktop mode to see side navigation</div>
+    </body>
+</html>

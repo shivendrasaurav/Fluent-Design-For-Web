@@ -4,7 +4,7 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     outline: none;
-    border-radius: 1px;
+    border-radius: 2px;
 }
 
 /*Typography*/
@@ -22,11 +22,12 @@ a,p,pre{font-size: 24px; font-weight: 100;}
 .ta_right{text-align: right;}
 .ta_center{text-align: center;}
 /*Grid*/
-.page_container{
+.page_container,.nav_container{
     display: block;
     width: 88%;
     margin: auto;
 }
+.nav_container{border-right: 0.5px solid rgba(0, 0, 0, 0.4); min-height:100%;}
 
 .row{display: inline-flex;}
 .column{display: inline-block; padding: 1%;}
@@ -75,6 +76,7 @@ a,p,pre{font-size: 24px; font-weight: 100;}
     .small4,.small3{width: 33.333333333333333333333333333333%;}
     .small2{width:25%;}
     .small1{width: 16.666666666666666666666666666667%;}
+    .small0{display:none;}
 }
 
 /*Elevation*/
@@ -117,7 +119,7 @@ a,p,pre{font-size: 24px; font-weight: 100;}
 
 a,.link{color:#000; position: relative; z-index: 0; text-decoration-color: #06A7DD;}
 a:before,.link:before{position: absolute; background: #06955B; z-index: 1; width: 0%; height: 10%; content: '';left:0; bottom:2; transition:1s ease;}
-a:hover:before,.link:hover::before{width: 100%; transition: 1s ease;}
+a:hover:before,.link:hover:before{width: 100%; transition: 1s ease;}
 
 /*Buttons*/
 
@@ -128,6 +130,8 @@ button{
     border: 1.5px solid transparent;
 }
 button.large{width: 60%; height: 10%; font-size: 120%;}
+button.icon{width: auto; height: auto;}
+button.icon.circular{border-radius: 100%;}
 
 /*Frosted Buttons*/
 .frost_container {
@@ -218,7 +222,7 @@ select option{padding: 2%; white-space: normal;}
 .drop:hover{border: 1.5px solid rgba(0, 0, 0, 0.6);}
 .drop:checked{border: 1.5px solid rgba(6, 167, 221, 1);}
 .drop_val{ position: absolute; padding: 1%; z-index: 1;}
-.opt_group{width: 80%; display: none; z-index: 1;}
+.opt_group{width: 80%; display: none;}
 input[type=radio].drop_opt{
     position:relative;
     margin-left: 0px;
@@ -232,7 +236,7 @@ input[type=radio].drop_opt{
 }
 input[type=radio].drop_opt:hover{background: #DDD}
 input[type=radio].drop_opt:checked{background: #FFF; box-shadow: none;}
-.drop_container .drop:checked ~ .opt_group{display: block;}
+.drop_container .drop:checked ~ .opt_group{display: block; z-index: 2;}
 
 /*Slider*/
 input[type=range]{
@@ -554,3 +558,64 @@ img{width: 100%; height: auto;}
     color: #FFF;
     transition: 300ms;
 }
+/*Breadcrumbs*/
+li.breadcrumb_icon{font-size: 20px;}
+li.breadcrumb{display: inline-block; position: relative; background: #FFF; font-size: 20px;}
+li.breadcrumb:hover{background: rgba(0, 0, 0, 0.2); border: none;}
+
+/*Contextual Menu*/
+
+.contextual_container{width: 50%;}
+.contextual_button{
+    background: #FFF;
+    padding: 2%;
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5%;
+    position: relative;
+    opacity: 0;
+}
+.contextual_val{position: absolute; padding: 0.5%; border:1.5px solid rgba(0, 0, 0, 0.4);}
+.contextual_button:hover{border:1.5px solid rgba(0, 0, 0, 0.6);}
+.contextual_button:focus{border:1.5px solid rgba(6, 167, 221, 1);}
+.contextual_group{border: 1.5px solid rgba(0, 0, 0, 0.4); display: none; z-index: 2; position: absolute; width: 260px; background: #FFF;}
+li.contextual_item,li.navigation_item{padding: 2%; background: #FFF; list-style: none;}
+li.contextual_item:hover,li.navigation_item:hover{background: rgba(0, 0, 0, 0.2);}
+.contextual_container .contextual_button:checked ~ .contextual_group{display: block;}
+a li.contextual_item, a li.navigation_item{font-size: 16px; font-weight: 400;}
+
+/*Pivot*/
+a.pivot{text-decoration: none; padding: 1%; width: 100%;}
+a.pivot::before{width: 0%; left: 50%;}
+a.pivot.active::before{width:100%; left:0;}
+a.pivot:hover::before{width:100%; left:0;}
+a.pivot.active:hover::before{width:108%; left:-5%;}
+.pivot_group{background: transparent;}
+.pivot_container{width: 100%;}
+.pivot_container button{padding: 0.5%;}
+
+/*Command Bar*/
+.commandbar_container{width: 100%;}
+.commandbar_button{background: #FFF; padding: 1%;}
+.commandbar_button:hover{background: rgba(0, 0, 0, 0.2);}
+.commandbar_button:focus{background: rgba(0, 0, 0, 0.3);}
+
+/*Side Navigation*/
+.navigation_container{width: 100%;}
+.navigation_val{position: absolute; padding: 0.5%;}
+.navigation_group{ display: none; width: 260px; background: #FFF; padding-left:20px;}
+.navigation_button{
+    background: #FFF;
+    padding: 2%;
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5%;
+    position: relative;
+    opacity: 0;
+}
+li.navigation_item{border:none;}
+.navigation_container .navigation_button:checked ~ .navigation_group{display: block;}
+.nav_disp{padding-right: 10px;}
+.navigation_container .navigation_button:checked ~ .nav_disp{transform: rotate(90 deg);}
