@@ -388,7 +388,7 @@ ol li::before{
 }
 li:nth-child(odd) {background-color: rgba(6, 167, 221, 0.4); color: #000; backdrop-filter: blur(90px);}
 li:nth-child(even) {background-color:  rgba(0, 0, 0, 0.4); color: #000; backdrop-filter: blur(90px);}
-li:hover{border-left: 4px solid #000; transition: 200ms; background: rgba(0, 0, 0, 0.6);}
+li:hover{border-left: 4px solid #000; transition: 200ms; background: rgba(200, 200, 200, 0.6);}
 /*Progress*/
 .simple_progress_bar{
     position: relative;
