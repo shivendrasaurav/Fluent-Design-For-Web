@@ -618,4 +618,3 @@ a.pivot.active:hover::before{width:108%; left:-5%;}
 li.navigation_item{border:none;}
 .navigation_container .navigation_button:checked ~ .navigation_group{display: block;}
 .nav_disp{padding-right: 10px;}
-.navigation_container .navigation_button:checked ~ .nav_disp{transform: rotate(90 deg);}
