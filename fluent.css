@@ -558,6 +558,24 @@ img{width: 100%; height: auto;}
     color: #FFF;
     transition: 300ms;
 }
+/*Snackbar*/
+.snackbar_content{
+    z-index: 1;
+    position: fixed;
+    text-align: center;
+    bottom:20;
+    padding: 2%;
+    max-width: 40%;
+    width: 40%;
+    margin-left: 20%;
+    margin-right: 20%;
+    opacity: 0.9;
+    display: none;
+    -webkit-backdrop-filter: blur(10px;)
+}
+.snackbar_content:hover{opacity: 1;}
+.snackbar_container .snackbar_button:focus ~ .snackbar_content{display: block;}
+
 /*Breadcrumbs*/
 li.breadcrumb_icon{font-size: 20px;}
 li.breadcrumb{display: inline-block; position: relative; background: #FFF; font-size: 20px;}
