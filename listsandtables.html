@@ -9,7 +9,43 @@
         <script src="fluent.js"></script>
     </head>
     <body>
-        <div class="page_container">
+        <div class="column large12 pivot_container secondary_blue" style="position: fixed;">
+                <a class="pivot_button icon left" onclick="history.back();">
+                    <i class="ms-Icon ms-Icon--Back" aria-hidden="true"></i>
+                </a>
+                <a class="pivot_button icon left" onclick="history.forward();">
+                    <i class="ms-Icon ms-Icon--Forward" aria-hidden="true"></i>
+                </a>
+                <span class="small0 pivot_heading">Fluent Design For Web</span>
+                <a href="controls.html" class="pivot_button right active">Controls</a>
+                <a href="styles.html" class="pivot_button right">Styles</a>
+                <a href="index.html" class="pivot_button right">Home</a>
+        </div><br><br><br><br>
+        <div class="nav_container column large3 medium3 small0">
+                <h5>Fabric UI</h5>
+                <div class="navigation_container">
+                        <span class="navigation_val"><i class="ms-Icon ms-Icon--Chevronright nav_disp"></i>Styles</span><input type="checkbox" class="navigation_button">
+                        <div class="navigation_group">
+                            <a href="typography.html"><li class="navigation_item">Typography</li></a>
+                            <a href="elevation.html"><li class="navigation_item">Elevation</li></a>
+                            <a href="colors.html"><li class="navigation_item">Colors</li></a>
+                            <a href="grid.html"><li class="navigation_item">Grid Layout</li></a>
+                            <a href="Icons/fluent-icons.html"><li class="navigation_item">Icon Pack</li></a>
+                        </div>
+                </div><br><br>
+                <div class="navigation_container">
+                        <span class="navigation_val"><i class="ms-Icon ms-Icon--Chevronright nav_disp"></i>Controls</span><input checked type="checkbox" class="navigation_button">
+                        <div class="navigation_group">
+                            <a href="inputs.html"><li class="navigation_item">Inputs</li></a>
+                            <a href="utilities.html"><li class="navigation_item">Utilities</li></a>
+                            <a href="surfaces.html"><li class="navigation_item">Surfaces</li></a>
+                            <a href="listsandtables.html"><li class="navigation_item">List and Tables</li></a>
+                            <a href="nav.html"><li class="navigation_item">Navigations</li></a>
+                            <a href="progress.html"><li class="navigation_item">Progress</li></a>
+                        </div>
+                </div>
+        </div>
+        <div class="page_container column large9 medium9 small12 right">
             <h2>Lists and Tables</h2>
             <h5>Lists</h5>
             <div class="column large6 medium6 small12">
@@ -39,5 +75,6 @@
                     </ul>
                 </div>
          </div>
-     </body>
+         <footer class="column large12 medium12 small12 primary_green">Fork The Project From <a href="https://github.com/shivendrasaurav/Fluent-Design-For-Web/">Github</a></footer>
+        </body>
      </html>

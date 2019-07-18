@@ -28,7 +28,7 @@ a,p,pre{font-size: 24px; font-weight: 100;}
     width: 88%;
     margin: auto;
 }
-.nav_container{background: #DFEEFD; min-height: 100%; bottom:0;}
+.nav_container{background: #DFEEFD; min-height: 100%;}
 .row{display: inline-flex;}
 .column{display: inline-block; padding: 1%;}
 .center{display: block; margin: auto;}
