@@ -38,6 +38,7 @@
         </script>
     </head>
     <body onload="closemod1(); closeside1();">
+        <div  id="body">
         <div class="column large12 pivot_container secondary_blue" style="position: fixed;">
                 <a class="pivot_button icon left" onclick="history.back();">
                     <i class="ms-Icon ms-Icon--Back" aria-hidden="true"></i>
@@ -50,7 +51,7 @@
                 <a href="styles.html" class="pivot_button right">Styles</a>
                 <a href="index.html" class="pivot_button right">Home</a>
         </div><br><br><br><br>
-        <div class="nav_container column large3 medium3 small0" id="body">
+        <div class="nav_container column large3 medium3 small0">
                 <h5>Fabric UI</h5>
                 <div class="navigation_container">
                         <span class="navigation_val"><i class="ms-Icon ms-Icon--Chevronright nav_disp"></i>Styles</span><input type="checkbox" class="navigation_button">
@@ -96,28 +97,28 @@
                 <div class="dialogue_content large12">This Is A Dialogue Box</div>
             </div>
         </div>
-            <div class="modal_container" id="mod1">
-                <div class="modal_content zi3" id="modct1">
-                        <div class="dialogue_pane large12"><button class="primary_red right ta_center" onclick="closemod1();" style="padding: 10px; padding-left: 20px; padding-right: 20px;">X</button></div>
-                    <div class="page_container">
-                        <h2>This Is Some Content</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="sidepanel_container" id="side1">
-                <div class="sidepanel_content zi3 right" id="modct1">
-                    <button class="primary_red right ta_center" onclick="closeside1();" style="padding: 10px; padding-left: 20px; padding-right: 20px;">X</button><br><br><br><br>
-                    <div class="page_container">
-                        <div class="large12 panel_item">Panel Item 1</div>
-                        <div class="large12 panel_item">Panel Item 2</div>
-                        <div class="large12 panel_item">Panel Item 3</div>
-                        <div class="large12 panel_item">Panel Item 4</div>
-                        <div class="large12 panel_item">Panel Item 5</div>
-                        <div class="large12 panel_item">Panel Item 6</div>
-                    </div>
+        </div>
+        <footer class="column large12 medium12 small12 primary_green">Fork The Project From <a href="https://github.com/shivendrasaurav/Fluent-Design-For-Web/">Github</a></footer>
+        <div class="modal_container" id="mod1">
+            <div class="modal_content zi3" id="modct1">
+                    <div class="dialogue_pane large12"><button class="primary_red right ta_center" onclick="closemod1();" style="padding: 10px; padding-left: 20px; padding-right: 20px;">X</button></div>
+                <div class="page_container">
+                    <h2>This Is Some Content</h2>
                 </div>
             </div>
         </div>
-        <footer class="column large12 medium12 small12 primary_green">Fork The Project From <a href="https://github.com/shivendrasaurav/Fluent-Design-For-Web/">Github</a></footer>
-    </body>
+        <div class="sidepanel_container" id="side1">
+            <div class="sidepanel_content zi3 right" id="modct1">
+                <button class="primary_red right ta_center" onclick="closeside1();" style="padding: 10px; padding-left: 20px; padding-right: 20px;">X</button><br><br><br><br>
+                <div class="page_container">
+                    <div class="large12 panel_item">Panel Item 1</div>
+                    <div class="large12 panel_item">Panel Item 2</div>
+                    <div class="large12 panel_item">Panel Item 3</div>
+                    <div class="large12 panel_item">Panel Item 4</div>
+                    <div class="large12 panel_item">Panel Item 5</div>
+                    <div class="large12 panel_item">Panel Item 6</div>
+                </div>
+            </div>
+        </div>
+</body>
 </html>
