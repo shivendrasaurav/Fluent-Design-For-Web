@@ -9,13 +9,12 @@
 }
 
 /*Typography*/
-h1{font-size: 500%; font-weight: 200; margin: 10px; margin-left: 0px; text-align: left;}
-h2{font-size: 450%; font-weight: 200; margin: 10px; margin-left: 0px; text-align: left;}
-h3{font-size: 400%; font-weight: 200; margin: 10px; margin-left: 0px; text-align: left;}
-h4{font-size: 350%; font-weight: 200; margin: 10px; margin-left: 0px; text-align: left;}
-h5{font-size: 300%; font-weight: 200; margin: 10px; margin-left: 0px; text-align: left;}
-h6{font-size: 250%; font-weight: 200; margin: 10px; margin-left: 0px; text-align: left;}
-h7{font-size: 200%; font-weight: 200; margin: 10px; margin-left: 0px; text-align: left;}
+h1{font-size: 450%; font-weight: 200; margin: 10px; margin-left: 0px; text-align: left;}
+h2{font-size: 400%; font-weight: 200; margin: 10px; margin-left: 0px; text-align: left;}
+h3{font-size: 350%; font-weight: 200; margin: 10px; margin-left: 0px; text-align: left;}
+h4{font-size: 300%; font-weight: 200; margin: 10px; margin-left: 0px; text-align: left;}
+h5{font-size: 250%; font-weight: 200; margin: 10px; margin-left: 0px; text-align: left;}
+h6{font-size: 200%; font-weight: 200; margin: 10px; margin-left: 0px; text-align: left;}
 
 a,p,pre{font-size: 24px; font-weight: 100;}
 
