@@ -652,3 +652,23 @@ a li.navigation_item{border:none; text-decoration: none;}
 li.navigation_item::before{display: none;}
 .navigation_container .navigation_button:checked ~ .navigation_group{display: block;}
 .nav_disp{padding-right: 10px;}
+
+
+.person_container{
+    width: 100%;
+    border: 5px solid rgb(230, 165, 65);
+}
+.person_container .profile_img{
+    width : 100%;
+    height : 300px;
+    border-bottom:1px solid #000;
+}
+.person_container .profile_data{
+    text-align: justify;
+    font-size: 24px;
+    padding : 10px
+}
+.oppurtunities{
+    height: 35%;
+    overflow-y: scroll;
+}
