@@ -9,14 +9,14 @@
 }
 
 /*Typography*/
-h1{font-size: 450%; font-weight: 200; margin: 10px; margin-left: 0px; text-align: left;}
-h2{font-size: 400%; font-weight: 200; margin: 10px; margin-left: 0px; text-align: left;}
-h3{font-size: 350%; font-weight: 200; margin: 10px; margin-left: 0px; text-align: left;}
-h4{font-size: 300%; font-weight: 200; margin: 10px; margin-left: 0px; text-align: left;}
-h5{font-size: 250%; font-weight: 200; margin: 10px; margin-left: 0px; text-align: left;}
-h6{font-size: 200%; font-weight: 200; margin: 10px; margin-left: 0px; text-align: left;}
+h1{font-size: 400%; font-weight: 200; margin: 10px; margin-left: 0px; text-align: left;}
+h2{font-size: 350%; font-weight: 200; margin: 10px; margin-left: 0px; text-align: left;}
+h3{font-size: 300%; font-weight: 200; margin: 10px; margin-left: 0px; text-align: left;}
+h4{font-size: 250%; font-weight: 200; margin: 10px; margin-left: 0px; text-align: left;}
+h5{font-size: 200%; font-weight: 200; margin: 10px; margin-left: 0px; text-align: left;}
+h6{font-size: 150%; font-weight: 200; margin: 10px; margin-left: 0px; text-align: left;}
 
-a,p,pre{font-size: 18px; font-weight: 100;}
+a,p,pre{font-size: 16px; font-weight: 100;}
 
 .ta_left{text-align: left;}
 .ta_right{text-align: right;}
@@ -44,7 +44,7 @@ footer{position: relative;}
     .large9{width: 75%;}
     .large8{width: 66.666666666666666666666666666667%;}
     .large7{width: 58.3333333333333333333333333333333%;}
-    .large6{width: 50%;}
+    .large6{width: 49%;}
     .large5{width: 41.666666666666666666666666666667%;}
     .large4{width: 33.333333333333333333333333333333%;}
     .large3{width: 25%;}
@@ -109,12 +109,13 @@ footer{position: relative;}
 .zi4:hover{box-shadow:  12px 0 24px 0 rgba(0, 0, 0, 0.4), 0 6px 18px 0 rgba(0, 0, 0, 0.38); transition: 250ms;}
 
 /*Colors*/
-.primary_blue{background: #08415C; color:#FFF;}
+.primary_blue{background: #0065AF; color:#FFF;}
 .primary_green{background: #28B85B; color:#FFF;}
-.primary_red{background: #CC2936; color:#FFF;}
+.primary_red{background: #e50c55; color:#FFF;}
 .primary_yellow{background: #CCC908; color:#1A1A1A;}
 .primary_inverted{background: #1E1E1E; color:#FFF;}
-
+.primary_blue_title{background: linear-gradient(to bottom right, #08415CCC , #16B9DDCC 70%); color:#FFF;}
+/*repeating-linear-gradient(45deg, #16B9DD 50px, #0094DD 60px)*/
 
 .secondary_blue{background: #06A7DD; color:#FFF;}
 .secondary_green{background: #06A77D; color:#FFF;}
@@ -150,11 +151,12 @@ button.icon:hover,.button.icon:hover{border: 1px solid rgba(0, 0, 0, 0.4);}
     -moz-appearance: none;
     appearance: none;
     border: none;
-    font-size: 1.2em;
+    font-size: auto;
     outline: none;
     overflow: hidden;
     height: 60px;
     width: 140px;
+    padding: none;
 }
 .frost_container .frost {position: relative; pointer-events: none;}
 .frost_container::before {
@@ -165,13 +167,13 @@ button.icon:hover,.button.icon:hover{border: 1px solid rgba(0, 0, 0, 0.4);}
     top: var(--y);
     width: var(--size);
     height: var(--size);
-    background: radial-gradient(circle closest-side, rgba(125, 125, 125, 0.5), transparent);
+    background: radial-gradient(circle closest-side, rgba(202, 202, 202, 0.5), transparent);
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     transition: width .05s ease, height .05s ease;
 }
 .frost_container:hover::before {--size: 180px;}
-.frost_container:active::before {--size: 4000px; transition: 200ms ease; background: radial-gradient(circle closest-side, rgba(125, 125, 125, 0.8), transparent);}
+.frost_container:active::before {--size: 4000px; transition: 200ms ease; background: radial-gradient(circle closest-side, rgba(202, 202, 202, 0.8), transparent);}
 .frost_container:hover{border: 1.5px solid transparent;}
 
 /*Inputs*/
@@ -653,22 +655,4 @@ li.navigation_item::before{display: none;}
 .navigation_container .navigation_button:checked ~ .navigation_group{display: block;}
 .nav_disp{padding-right: 10px;}
 
-
-.person_container{
-    width: 100%;
-    border: 5px solid rgb(230, 165, 65);
-}
-.person_container .profile_img{
-    width : 100%;
-    height : 300px;
-    border-bottom:1px solid #000;
-}
-.person_container .profile_data{
-    text-align: justify;
-    font-size: 24px;
-    padding : 10px
-}
-.oppurtunities{
-    height: 35%;
-    overflow-y: scroll;
-}
+li{font-size: 14px;}
