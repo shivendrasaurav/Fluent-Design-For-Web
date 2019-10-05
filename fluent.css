@@ -114,6 +114,7 @@ footer{position: relative;}
 .primary_red{background: #e50c55; color:#FFF;}
 .primary_yellow{background: #CCC908; color:#1A1A1A;}
 .primary_inverted{background: #1E1E1E; color:#FFF;}
+.primary_white{background: #FAFAFA; color: #232323;}
 .primary_blue_title{background: linear-gradient(to bottom right, #08415CCC , #16B9DDCC 70%); color:#FFF;}
 /*repeating-linear-gradient(45deg, #16B9DD 50px, #0094DD 60px)*/
 
@@ -132,8 +133,8 @@ a:hover:before,.link:hover:before{width: 100%; transition: 1s ease;}
 button,.button{
     background: rgba(125, 125, 125, 0.4);
     border: none;
-    padding: 2%;
-    border: 1.5px solid transparent;
+    padding: 0.5%;
+    border: 1.5px solid #232323;
     text-align: center;
 }
 button.large,.button.large{width: 60%; height: 10%; font-size: 120%;}
@@ -174,7 +175,7 @@ button.icon:hover,.button.icon:hover{border: 1px solid rgba(0, 0, 0, 0.4);}
 }
 .frost_container:hover::before {--size: 180px;}
 .frost_container:active::before {--size: 4000px; transition: 200ms ease; background: radial-gradient(circle closest-side, rgba(202, 202, 202, 0.8), transparent);}
-.frost_container:hover{border: 1.5px solid transparent;}
+.frost_container:hover{border: 4px solid transparent;}
 
 /*Inputs*/
 
