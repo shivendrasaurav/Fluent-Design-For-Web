@@ -481,7 +481,7 @@ tr:hover{transition: 200ms; background: rgba(200, 200, 200, 0.6); color:rgba(0, 
     left: 0;
     right: 0;
     z-index: 10;
-    -webkit-backdrop-filter: blur(20px) saturate(125%);
+    -webkit-backdrop-filter: blur(10px);
 }
 .modal_content{
     display: block;
