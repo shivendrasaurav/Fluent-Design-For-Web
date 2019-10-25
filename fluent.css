@@ -114,7 +114,7 @@ footer{position: relative;}
 .primary_red{background: #e50c55; color:#FFF;}
 .primary_yellow{background: #CCC908; color:#1A1A1A;}
 .primary_inverted{background: #1E1E1E; color:#FFF;}
-.primary_white{background: #FAFAFA; color: #232323;}
+.primary_white{background: #F1F1F1; color: #232323;}
 .primary_blue_title{background: linear-gradient(to bottom right, #08415CCC , #16B9DDCC 70%); color:#FFF;}
 /*repeating-linear-gradient(45deg, #16B9DD 50px, #0094DD 60px)*/
 
@@ -124,18 +124,26 @@ footer{position: relative;}
 /*Controls*/
 
 a,.link{color:#000; position: relative; z-index: 0; text-decoration-color: #06A7DD;}
-a:before,.link:before{position: absolute; background: #06955B; z-index: 1; width: 0%; height: 10%; content: '';left:0; bottom:2; transition:1s ease;}
-a:hover:before,.link:hover:before{width: 100%; transition: 1s ease;}
+a:before,.link:before{position: absolute; background: #06955B; width: 0%; height: 15%; content: ''; left:0; bottom: 0; transition:1s ease;}
+a:hover:before,.link:hover:before{position: absolute; left:0; bottom: 0; width: 100%; transition: 1s ease;}
 .headlink{margin-left: 100px; font-size: 32px; text-decoration: none;}
 .headlink::before{display: none;}
 /*Buttons*/
 
 button,.button{
-    background: rgba(200, 200, 200, 0.4);
+    background: #E1E1E1;
     border: none;
-    padding: 0.5%;
-    border: 1.5px solid transparent;
+    padding: 12px;
+    border: none;
     text-align: center;
+    font-weight: 600;
+}
+button:hover,.button:hover{
+    opacity: 0.9;
+}
+button:focus,.button:focus{
+    opacity: 0.8;
+    filter: saturate(160%);
 }
 button.large,.button.large{width: 60%; height: 10%; font-size: 120%;}
 button.icon,.button.icon{height:40px; width: 40px; border: 1px solid rgba(0, 0, 0, 0.0); margin-left: 1%;}
@@ -530,7 +538,7 @@ tr:hover{transition: 200ms; background: rgba(200, 200, 200, 0.6); color:rgba(0, 
     height: 0;
     font-size: 0px;
     opacity: 0;
-    margin-top:-50px;
+    margin-top:24px;
 }
 .tooltip_container:hover .tooltip_info{opacity: 1; width: auto; height: auto; font-size: 16px; padding: 15px; overflow-y: auto;}
 
