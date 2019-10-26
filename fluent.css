@@ -12,9 +12,14 @@
     background-attachment: fixed;
 }
 .fullscreen{
-    margin: -5%;
-    overflow: hidden;
+    min-height: 100%;
+    width: 100%;
+    margin: -2%;
+    padding: 2%;
+    overflow: visible;
+    position: fixed;
 }
+
 
 /*Typography*/
 h1{font-size: 400%; font-weight: 200; margin: 10px; margin-left: 0px; text-align: left;}
@@ -89,6 +94,7 @@ footer{position: relative;}
     .small2{width:25%;}
     .small1{width: 16.666666666666666666666666666667%;}
     .small0{display:none;}
+
 }
 
 /*Elevation*/
