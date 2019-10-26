@@ -176,6 +176,7 @@ button.icon:hover,.button.icon:hover{border: 1px solid rgba(0, 0, 0, 0.4);}
     outline: none;
     overflow: hidden;
     height: 60px;
+    min-width: 140px;
     padding: none;
 }
 .frost_container .frost {position: relative; pointer-events: none;}
