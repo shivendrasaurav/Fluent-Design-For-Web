@@ -8,6 +8,13 @@
     text-align: justify;
 }
 
+.parralax{
+    background-attachment: fixed;
+}
+.fullscreen{
+    margin: -5%;
+}
+
 /*Typography*/
 h1{font-size: 400%; font-weight: 200; margin: 10px; margin-left: 0px; text-align: left;}
 h2{font-size: 350%; font-weight: 200; margin: 10px; margin-left: 0px; text-align: left;}
