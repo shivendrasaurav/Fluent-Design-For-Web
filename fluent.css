@@ -61,6 +61,7 @@ footer{position: relative;}
     .large3{width: 24.68%;}
     .large2{width: 16.48%;}
     .large1{width: 8.2%;}
+    .large0{display:none;}
 }
 
 /*For Medium Screens*/
@@ -78,6 +79,7 @@ footer{position: relative;}
     .medium3{width: 25%;}
     .medium2{width: 16%;}
     .medium1{width: 8%;}
+    .medium0{display:none;}
 }
 
 /*For Small Screens*/
@@ -596,6 +598,7 @@ img{width: 100%; height: auto;}
     right: 0;
     top:0;
     bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
     color: #FFF;
     transition: 300ms;
 }
