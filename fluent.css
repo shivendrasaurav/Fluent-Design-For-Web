@@ -61,7 +61,7 @@ footer{position: relative;}
     .large3{width: 24.68%;}
     .large2{width: 16.48%;}
     .large1{width: 8.2%;}
-    .large0{display:none;}
+    .large0{display:none; width: 0%;}
 }
 
 /*For Medium Screens*/
@@ -79,7 +79,7 @@ footer{position: relative;}
     .medium3{width: 25%;}
     .medium2{width: 16%;}
     .medium1{width: 8%;}
-    .medium0{display:none;}
+    .medium0{display:none; width: 0%;}
 }
 
 /*For Small Screens*/
@@ -93,7 +93,7 @@ footer{position: relative;}
     .small4,.small3{width: 33.333333333333333333333333333333%;}
     .small2{width:25%;}
     .small1{width: 16.666666666666666666666666666667%;}
-    .small0{display:none;}
+    .small0{display:none; width: 0%;}
 }
 
 /*Elevation*/
