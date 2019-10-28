@@ -679,3 +679,38 @@ li.navigation_item::before{display: none;}
 .nav_disp{padding-right: 10px;}
 
 li{font-size: 14px;}
+
+/*Hidden Sections*/
+.code_notifier{
+    position: relative;
+    left: 0;
+    border: none;
+    width: 100%; 
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    height: 28px;
+    z-index: 0;
+}
+
+.codebar_text{
+    position: absolute;
+    z-index: 5;
+    color: #FFF;
+    padding: 5px;
+}
+
+.code_content{
+    display: none;
+}
+
+.code_notifier:checked ~ .code_content{
+    display: block;
+}
+
+.codeblock_text{
+    margin-top: 0px;
+    padding: 20px;
+    background: #232323;
+    color: #E1E1E1;
+    font-family: 'Consolas', 'Roboto';
+}
