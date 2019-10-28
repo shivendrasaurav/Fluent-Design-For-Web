@@ -27,7 +27,7 @@ h4{font-size: 250%; font-weight: 200; margin: 10px; margin-left: 0px; text-align
 h5{font-size: 225%; font-weight: 200; margin: 10px; margin-left: 0px; text-align: left;}
 h6{font-size: 200%; font-weight: 200; margin: 10px; margin-left: 0px; text-align: left;}
 
-a,p,pre{font-size: 16px; font-weight: 100;}
+a,p,pre{font-size: 18px; font-weight: 400;}
 
 .ta_left{text-align: left;}
 .ta_right{text-align: right;}
@@ -685,11 +685,12 @@ li{font-size: 14px;}
     position: relative;
     left: 0;
     border: none;
-    width: 100%; 
+    width: 60px; 
     -webkit-appearance: none; 
     -moz-appearance: none;
-    height: 28px;
+    height: 30px;
     z-index: 0;
+    padding: 5px;
 }
 
 .codebar_text{
@@ -713,4 +714,15 @@ li{font-size: 14px;}
     background: #232323;
     color: #E1E1E1;
     font-family: 'Consolas', 'Roboto';
+    text-align: left;
+}
+
+.code_container{
+    padding: 30px;
+    margin-top: 40px;
+}
+
+
+.code, .output{
+    border: 0.5px solid #DDD;
 }
