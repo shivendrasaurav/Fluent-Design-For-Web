@@ -38,8 +38,7 @@ a,p,pre{font-size: 18px; font-weight: 400;}
     width: 88%;
     margin: auto;
 }
-footer{position: relative;}
-.nav_container{background: #DFEEFD; height: 100%; bottom:0;}
+footer{position: relative; width: 100%;}
 .row{display: inline-flex;}
 .column{display: inline-block; padding: 1%;}
 .center{display: block; margin: auto;}
@@ -660,8 +659,10 @@ li.navigation_item{ background: #DFEEFD;}
 .commandbar_button:focus{background: rgba(0, 0, 0, 0.3);}
 
 /*Side Navigation*/
-.navigation_container{width: 100%;}
-.navigation_val{position: absolute; padding: 0.5%;}
+
+.nav_container{background: #DFEEFD; position: sticky; top: 60; height: 90%; overflow-y: auto;}
+.navigation_container{width: 100%; position: relative;}
+.navigation_val{position: relative; padding: 0.5%;}
 .navigation_group{ display: none; width: auto; background: #DFEEFD; padding-left:20px;}
 .navigation_button{
     background: #FFF;
