@@ -38,8 +38,8 @@
         </script>
     </head>
     <body onload="closemod1(); closeside1();">
-        <div  id="body">
-        <div class="column large12 pivot_container secondary_blue" style="position: fixed;">
+    <div id="body">
+        <div class="column large9 pivot_container secondary_blue" style="position: fixed;">
                 <a class="pivot_button icon left" onclick="history.back();">
                     <i class="ms-Icon ms-Icon--Back" aria-hidden="true"></i>
                 </a>
@@ -75,33 +75,172 @@
                         </div>
                 </div>
         </div>
-        <div class="page_container column large9 medium9 small12 right" id="body">
-            <h2>Surfaces</h2>
-            <h7>Window</h7>
-            <p>Click On The Button Below To Open Window</p>
-            <button class="primary_yellow" onclick="openmod1();">Open Window</button><br><br>
-            <h7>Side Panel</h7>
-            <p>Click On The Button Below To Open Side Panel On Right</p>
-            <button class="primary_yellow" onclick="openside1();">Open Side Panel</button><br><br>
-            <h7>Tooltip</h7>
-            <p>Hover Over The Button Below To See What Action It Will Perform</p>
-            <div class="tooltip_container">
-                <span class="tooltip_info">When you hover over the button, you see me</span>
-                <button class="primary_yellow">Tooltip</button>
-            </div><br><br>
-            <h7>Dialogue</h7>
-            <p>Click On The Button Below To Open Draggable Dialogue Box</p>
-            <button class="primary_yellow" onclick="opendialog1();">Open Dialogue Box</button>
-            <div class="dialogue_box" id="dialog1">
-                <div class="dialogue_pane large12"><button class="primary_red right ta_center" onclick="closedialog1();" style="padding: 10px; padding-left: 20px; padding-right: 20px;">X</button></div>
-                <div class="dialogue_content large12">This Is A Dialogue Box</div>
+        <div class="page_container column large9 medium9 small12 right">
+            <h4>Surfaces</h4><br>
+            <h6>Window</h6>
+            <div class="page_container code_container large8 medium8 small12 center zi2">
+                    <div class="column large12 medium12 small12">
+
+                    <!--Output Comes Here-->
+                    <p>Click On The Button Below To Open Window</p>
+                    <button class="primary_yellow" onclick="openmod1();">Open Window</button><br><br>
+
+                    <!--Code Comes Here-->
+                    <div class="codebar_text">
+                        <span>&nbsp;&lt;&gt;</span>&nbsp;&nbsp;
+                    </div>
+                    <input type="checkbox" class="code_notifier primary_blue">
+
+                    <div class="code_content">
+                            <pre class="codeblock_text">
+
+For Button: 
+
+&lt;button class="primary_yellow" onclick="openmod1();">Open Window&lt;/button>
+
+------------------------------------------------------------------------------------
+
+For Window: 
+
+&lt;div class="modal_container" id="mod1">
+    &lt;div class="modal_content zi3" id="modct1">
+        &lt;div class="dialogue_pane large12">
+            &lt;button class="primary_red right ta_center mod_close_btn" onclick="closemod1();">X&lt;/button>
+        &lt;/div>
+        &lt;div class="page_container">
+            &lt;h2>This Is Some Content&lt;/h2>
+        &lt;/div>
+    &lt;/div>
+&lt;/div>
+                            </pre>
+                    </div>
+                </div>
             </div>
+
+            <br><br>
+            <h6>Side Panel</h6>
+            <div class="page_container code_container large8 medium8 small10 center zi2">
+                    <div class="column large12 medium12 small12">
+
+                    <!--Output Comes Here-->
+                    <p>Click On The Button Below To Open Window</p>
+                    <button class="primary_yellow" onclick="openside1();">Open Side Panel</button><br><br>
+
+                    <!--Code Comes Here-->
+                    <div class="codebar_text">
+                        <span>&nbsp;&lt;&gt;</span>&nbsp;&nbsp;
+                    </div>
+                    <input type="checkbox" class="code_notifier primary_blue">
+
+                    <div class="code_content">
+                            <pre class="codeblock_text">
+
+For Button: 
+
+&lt;button class="primary_yellow" onclick="openside1();">Open Side Panel&lt;/button>
+
+------------------------------------------------------------------------------------
+
+For Side Panel: 
+
+&lt;div class="sidepanel_container" id="side1">
+    &lt;div class="sidepanel_content zi3 right" id="modct1">
+        &lt;button class="primary_red right ta_center mod_close_btn" onclick="closeside1();">X&lt;/button>
+        &lt;div class="page_container">
+            &lt;div class="large12 panel_item">Panel Item 1&lt;/div>
+            &lt;div class="large12 panel_item">Panel Item 2&lt;/div>
+            &lt;div class="large12 panel_item">Panel Item 3&lt;/div>
+            &lt;div class="large12 panel_item">Panel Item 4&lt;/div>
+            &lt;div class="large12 panel_item">Panel Item 5&lt;/div>
+            &lt;div class="large12 panel_item">Panel Item 6&lt;/div>
+        &lt;/div>
+    &lt;/div>
+&lt;/div>
+                            </pre>
+                    </div>
+                </div>
+            </div>
+
+
+            <br><br>
+            <h6>Tooltip</h6>
+            <div class="page_container code_container large8 medium8 small10 center zi2">
+                    <div class="column large12 medium12 small12">
+
+                    <!--Output Comes Here-->
+                    <p>Hover Over The Button Below To See What Action It Will Perform</p>
+                    <div class="tooltip_container">
+                        <span class="tooltip_info">When you hover over the button, you see me</span>
+                        <button class="primary_yellow">Hover For Tooltip</button>
+                    </div><br><br>
+
+                    <!--Code Comes Here-->
+                    <div class="codebar_text">
+                        <span>&nbsp;&lt;&gt;</span>&nbsp;&nbsp;
+                    </div>
+                    <input type="checkbox" class="code_notifier primary_blue">
+
+                    <div class="code_content">
+                            <pre class="codeblock_text">
+
+&lt;div class="tooltip_container">
+    &lt;span class="tooltip_info">When you hover over the button, you see me&lt;/span>
+    &lt;button class="primary_yellow">Hover For Tooltip&lt;/button>
+&lt;/div>
+
+        </pre>
+                    </div>
+                </div>
+            </div>
+
+
+            <br><br>
+            <h6>Dialogue Box</h6>
+            <div class="page_container code_container large8 medium8 small10 center zi2">
+                    <div class="column large12 medium12 small12">
+
+                    <!--Output Comes Here-->
+                    <p>Click On The Button Below To Open Draggable Dialogue Box</p>
+                    <button class="primary_yellow" onclick="opendialog1();">Open Dialogue Box</button>
+                    <div class="dialogue_box" id="dialog1">
+                        <div class="dialogue_pane large12"><button class="primary_red right ta_center" onclick="closedialog1();" style="padding: 10px; padding-left: 20px; padding-right: 20px;">X</button></div>
+                        <div class="dialogue_content large12">This Is A Dialogue Box</div>
+                    </div><br><br>
+
+                    <!--Code Comes Here-->
+                    <div class="codebar_text">
+                        <span>&nbsp;&lt;&gt;</span>&nbsp;&nbsp;
+                    </div>
+                    <input type="checkbox" class="code_notifier primary_blue">
+
+                    <div class="code_content">
+                            <pre class="codeblock_text">
+For Button: 
+
+&lt;button class="primary_yellow" onclick="opendialog1();">Open Dialogue Box&lt;/button>
+
+------------------------------------------------------------------------------------
+
+For Dialogue Box: 
+
+&lt;div class="dialogue_box" id="dialog1">
+    &lt;div class="dialogue_pane large12">
+        &lt;button class="primary_red right ta_center mod_close_btn" onclick="closedialog1();" >X&lt;/button>
+    &lt;/div>
+    &lt;div class="dialogue_content large12">This Is A Dialogue Box&lt;/div>
+&lt;/div>
+
+        </pre>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        </div>
+    </div>
         <footer class="column large12 medium12 small12 primary_green">Fork The Project From <a href="https://github.com/shivendrasaurav/Fluent-Design-For-Web/">Github</a></footer>
         <div class="modal_container" id="mod1">
             <div class="modal_content zi3" id="modct1">
-                    <div class="dialogue_pane large12"><button class="primary_red right ta_center" onclick="closemod1();" style="padding: 10px; padding-left: 20px; padding-right: 20px;">X</button></div>
+                <div class="dialogue_pane large12"><button class="primary_red right ta_center mod_close_btn" onclick="closemod1();">X</button></div>
                 <div class="page_container">
                     <h2>This Is Some Content</h2>
                 </div>
