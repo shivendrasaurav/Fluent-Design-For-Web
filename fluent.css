@@ -370,7 +370,6 @@ input[type=radio]:checked{background: rgba(0, 0, 0, 0.8); border: 5px solid #FFF
 /*Checkbox*/
 .check{
     display: block;
-    position: relative;
     user-select: none;
 }
 
@@ -393,6 +392,8 @@ input[type=radio]:checked{background: rgba(0, 0, 0, 0.8); border: 5px solid #FFF
     width: 25px;
     height: 25px;
     border: 2px solid rgba(0, 0, 0, 0.4);
+    margin: 0px;
+    padding: 0px;
 }
 .check input:hover{border:2px solid #000}
 
