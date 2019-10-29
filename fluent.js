@@ -8,3 +8,30 @@ function frosting(){
         e.target.style.setProperty("--y", `${y}px`);
     };
 }
+function openmod1(){
+    document.getElementById("mod1").style.display="Block";
+    document.getElementById("body").style.filter="saturate(125%) blur(10px)";
+}
+function closemod1(){
+    document.getElementById("mod1").style.display="None";
+    document.getElementById("body").style.filter="blur(0px)";
+}
+function openside1(){
+    document.getElementById("side1").style.display="Block";
+    document.getElementById("body").style.filter="saturate(125%) blur(10px)";
+}
+function closeside1(){
+    document.getElementById("side1").style.display="None";
+    document.getElementById("body").style.filter="blur(0px)";
+}
+function opendialog1(){
+    document.getElementById("dialog1").style.display="Block";
+}
+function closedialog1(){
+    document.getElementById("dialog1").style.display="None";
+}
+
+$(function() {
+$( ".dialogue_box" ).draggable();
+});
+

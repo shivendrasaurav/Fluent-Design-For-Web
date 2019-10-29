@@ -498,6 +498,7 @@ tr:hover{transition: 200ms; background: rgba(200, 200, 200, 0.6); color:rgba(0, 
     padding: 10px; padding-left: 20px; padding-right: 20px;
 }
 .modal_container{
+    display: none;
     background: rgba(255, 255, 255, 0.25);
     position: fixed;
     top:0;
@@ -527,6 +528,7 @@ tr:hover{transition: 200ms; background: rgba(200, 200, 200, 0.6); color:rgba(0, 
     right: 0;
     z-index: 11;
     -webkit-backdrop-filter: blur(10px);
+    display: none;
 }
 .sidepanel_content{
     width: 320px;
