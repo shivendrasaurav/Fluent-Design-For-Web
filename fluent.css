@@ -737,3 +737,8 @@ li{font-size: 14px;}
 .code, .output{
     border: 0.5px solid #DDD;
 }
+
+img.square{
+    height: 200dp;
+    width: 200dp;
+}
