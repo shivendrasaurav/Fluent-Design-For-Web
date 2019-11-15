@@ -5,7 +5,6 @@
     box-sizing: border-box;
     outline: none;
     border-radius: 2px;
-    text-align: justify;
 }
 
 .parrallax{
@@ -158,7 +157,8 @@ button:focus,.button:focus{
     opacity: 0.8;
     filter: saturate(160%);
 }
-button.large,.button.large{width: 60%; height: 10%; font-size: 120%;}
+button.small,.button.small{min-width: 80px; height: 40px; font-size: 36dp;}
+button.large,.button.large{min-width: 160px; height: 80px; font-size: 48dp;}
 button.icon,.button.icon{height:40px; width: 40px; border: 1px solid rgba(0, 0, 0, 0.0); margin-left: 1%;}
 button.icon:hover,.button.icon:hover{border: 1px solid rgba(0, 0, 0, 0.4);}
 .circular{border-radius: 100%;}
@@ -737,4 +737,9 @@ li{font-size: 14px;}
 
 .code, .output{
     border: 0.5px solid #DDD;
+}
+
+img.square{
+    height: 200dp;
+    width: 200dp;
 }
