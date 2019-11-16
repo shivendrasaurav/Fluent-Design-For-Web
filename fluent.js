@@ -10,7 +10,7 @@ function frosting(){
 }
 function openmod1(){
     document.getElementById("mod1").style.display="Block";
-    document.getElementById("body").style.filter="saturate(125%) blur(10px)";
+    document.getElementById("body").style.filter="saturate(250%) blur(25px)";
 }
 function closemod1(){
     document.getElementById("mod1").style.display="None";
@@ -18,7 +18,7 @@ function closemod1(){
 }
 function openside1(){
     document.getElementById("side1").style.display="Block";
-    document.getElementById("body").style.filter="saturate(125%) blur(10px)";
+    document.getElementById("body").style.filter="saturate(250%) blur(25px)";
 }
 function closeside1(){
     document.getElementById("side1").style.display="None";
