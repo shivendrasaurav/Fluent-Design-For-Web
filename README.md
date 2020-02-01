@@ -20,3 +20,10 @@ Click [here](https://fluentdesignforweb.github.io/) to view the deployement.
 4. Lists and Tables
 5. Navigations
 6. Progress
+
+## How to use Fluent Design For Web in your project?
+
+To use Fluent Design For Web in your project you just need to include this piece of code in <head> tag of your HTML file:
+<link href="https://fluentdesignforweb.github.io/fluent.css" rel="stylesheet" type="text/css">
+Include this for windows and sidepanels:
+<script src="https://fluentdesignforweb.github.io/fluent.js"></script>
