@@ -120,7 +120,7 @@ footer{position: relative; width: 100%;}
 .zi4:hover{box-shadow:  12px 0 24px 0 rgba(0, 0, 0, 0.4), 0 6px 18px 0 rgba(0, 0, 0, 0.38); transition: 250ms;}
 
 /*Colors*/
-.transparent{background: transparent; color:#111;}
+.transparent{background: transparent; color:#999;}
 .primary_blue{background: #0065AF; color:#FFF;}
 .primary_green{background: #28B85B; color:#FFF;}
 .primary_red{background: #de1738; color:#FFF;}
