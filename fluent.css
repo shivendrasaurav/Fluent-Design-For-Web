@@ -120,9 +120,10 @@ footer{position: relative; width: 100%;}
 .zi4:hover{box-shadow:  12px 0 24px 0 rgba(0, 0, 0, 0.4), 0 6px 18px 0 rgba(0, 0, 0, 0.38); transition: 250ms;}
 
 /*Colors*/
+.transparent{background: transparent; color:#111;}
 .primary_blue{background: #0065AF; color:#FFF;}
 .primary_green{background: #28B85B; color:#FFF;}
-.primary_red{background: #e50c55; color:#FFF;}
+.primary_red{background: #de1738; color:#FFF;}
 .primary_yellow{background: #CCC908; color:#1A1A1A;}
 .primary_inverted{background: #1E1E1E; color:#FFF;}
 .primary_white{background: #F1F1F1; color: #232323;}
