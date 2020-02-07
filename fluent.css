@@ -7,6 +7,10 @@
     border-radius: 2px;
 }
 
+.spacein{
+    margin: 5px;
+}
+
 .parrallax{
     background-attachment: fixed;
 }
