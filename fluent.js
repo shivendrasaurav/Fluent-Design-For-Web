@@ -30,8 +30,10 @@ function opendialog1(){
 function closedialog1(){
     document.getElementById("dialog1").style.display="None";
 }
+/*
 
 $(function() {
 $( ".dialogue_box" ).draggable();
 });
 
+*/
