@@ -173,7 +173,7 @@ button.icon:hover,.button.icon:hover{border: 1px solid rgba(0, 0, 0, 0.4);}
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    border: none;
+    border: 4px solid transparent;
     font-size: auto;
     outline: none;
     overflow: hidden;
@@ -271,6 +271,30 @@ input[type=radio].drop_opt{
 input[type=radio].drop_opt:hover{background: #DDD}
 input[type=radio].drop_opt:checked{background: #FFF; box-shadow: none;}
 .drop_container .drop:checked ~ .opt_group{display: block; z-index: 2;}
+
+
+ul.dropdown{width: 200px; z-index: 10; display: block; position: absolute;}
+
+ul.dropdown li{display: none;}
+
+ul .dropdown_btn{
+    width: 200px;
+    background: #EEE;
+    color: #222;
+    padding: 15px;
+    font-weight: 600;
+}
+
+ul.dropdown:hover li{
+    font-size: 16px;
+    display: block;
+    position: relative;
+    top: -20px;
+    width: 200px;
+    padding: 15px;
+    background: #DDD;
+}
+
 
 /*Slider*/
 input[type=range]{
