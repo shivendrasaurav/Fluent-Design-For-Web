@@ -150,6 +150,7 @@ button,.button{
     text-align: center;
     font-weight: 600;
     margin: 4px;
+    min-width: 200px;
 }
 button:hover,.button:hover{
     opacity: 0.9;
@@ -159,7 +160,7 @@ button:focus,.button:focus{
     filter: saturate(160%);
 }
 button.small,.button.small{min-width: 80px; height: 40px; font-size: 36dp;}
-button.large,.button.large{min-width: 160px; height: 80px; font-size: 48dp;}
+button.large,.button.large{min-width: 250px; height: 60px; font-size: 48dp;}
 button.icon,.button.icon{height:40px; width: 40px; border: 1px solid rgba(0, 0, 0, 0.0); margin-left: 1%;}
 button.icon:hover,.button.icon:hover{border: 1px solid rgba(0, 0, 0, 0.4);}
 .circular{border-radius: 100%;}
@@ -177,7 +178,6 @@ button.icon:hover,.button.icon:hover{border: 1px solid rgba(0, 0, 0, 0.4);}
     font-size: auto;
     outline: none;
     overflow: hidden;
-    height: 60px;
     padding: none;
 }
 .frost_container .frost {position: relative; pointer-events: none;}
@@ -273,7 +273,7 @@ input[type=radio].drop_opt:checked{background: #FFF; box-shadow: none;}
 .drop_container .drop:checked ~ .opt_group{display: block; z-index: 2;}
 
 
-ul.dropdown{width: 200px; z-index: 10; display: block; position: absolute;}
+ul.dropdown{width: 200px; z-index: 1; display: block; position: absolute;}
 
 ul.dropdown li{display: none;}
 
