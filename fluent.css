@@ -161,8 +161,8 @@ button:focus,.button:focus{
 }
 button.small,.button.small{min-width: 80px; height: 40px; font-size: 36dp;}
 button.large,.button.large{min-width: 250px; height: 60px; font-size: 48dp;}
-button.icon,.button.icon{height:40px; width: 40px; border: 1px solid rgba(0, 0, 0, 0.0); margin-left: 1%;}
-button.icon:hover,.button.icon:hover{border: 1px solid rgba(0, 0, 0, 0.4);}
+.icon,.button.icon{height:40px; width: 40px; border: 1px solid rgba(0, 0, 0, 0.0); margin-left: 1%;}
+.icon:hover,.button.icon:hover{border: 1px solid rgba(0, 0, 0, 0.4);}
 .circular{border-radius: 100%;}
 .tab::before{display: none;}
 .tab button{height: 18%; width: 96%; display: block; margin: auto; text-align: center; background: #DDD;}
