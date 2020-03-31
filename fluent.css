@@ -464,8 +464,9 @@ tr:hover{transition: 200ms; background: rgba(200, 200, 200, 0.6); color:rgba(0, 
 .simple_progress_bar{
     position: relative;
     width: 80%;
-    height: 2%;
-    background: rgba(0, 0, 0, 0.4);
+    height: 4px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 90px;
 }
 .simple_progress_bar:hover,.indeterminate_progress_bar:hover{background: rgba(0, 0, 0, 0.6);}
 .simple_progress_bar::before{
@@ -473,8 +474,9 @@ tr:hover{transition: 200ms; background: rgba(200, 200, 200, 0.6); color:rgba(0, 
     content: ' ';
     width: 0%;
     height: 100%;
-    background: radial-gradient(circle at 95%, #08415C, #06A7DD);
-    animation: simple 2.5s infinite linear;
+    background: radial-gradient(circle at 95%, #08415C, #05A5DA);
+    animation: simple 5s infinite ease;
+    border-radius: 90px;
 }
 @keyframes simple{
     0%{width: 0%;}
@@ -484,18 +486,20 @@ tr:hover{transition: 200ms; background: rgba(200, 200, 200, 0.6); color:rgba(0, 
 .indeterminate_progress_bar{
     position: relative;
     width: 80%;
-    height: 2%;
-    background: rgba(0, 0, 0, 0.4);
+    height: 4px;
+    background: rgba(0, 0, 0, 0.2);
     overflow: hidden;
+    border-radius: 90px;
 }
 .indeterminate_progress_bar::before{
     position: absolute;
     content: ' ';
     width: 30%;
     height: 100%;
-    background: radial-gradient(circle at 50%, #08415C, #06A7DD, transparent);
-    animation: intderminate 2.5s infinite linear;
+    background: radial-gradient(circle at 50%, #08415C, #06A7DD);
+    animation: intderminate 5s infinite linear;
     margin-left: -12.5%;
+    border-radius: 90px;
 }
 @keyframes intderminate{
     0%{transform: translateX(0%);}
