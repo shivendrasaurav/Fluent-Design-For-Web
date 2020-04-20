@@ -686,7 +686,7 @@ li.navigation_item{ background: #DFEEFD;}
 .pivot_container{width:100%; z-index: 5; color: #FFF;}
 .pivot_button{padding: 1%; text-decoration: none; background: transparent; color: #FFF;}
 .pivot_button::before{background: #FFF;}
-.pivot_button.active::before{width: 90%;}
+.pivot_button.active::before{width: 100%;}
 .pivot_button.active:hover::before{width: 100%;}
 .pivot_heading{margin-left:24px; font-size: 42px;}
 /*Command Bar*/
