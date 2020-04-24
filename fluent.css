@@ -634,7 +634,7 @@ img{width: 100%; height: auto;}
     right: 0;
     top:0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.6);
+    background: repeating-linear-gradient(45deg, #9e9e9e44 0.33%, #8e8e8e44 0.66%), repeating-linear-gradient(-45deg, #9e9e9e66 0.33%, #8e8e8e66 0.66%);
     color: #FFF;
     transition: 300ms;
 }
