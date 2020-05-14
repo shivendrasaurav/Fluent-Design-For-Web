@@ -526,7 +526,7 @@ tr:hover{transition: 200ms; background: rgba(200, 200, 200, 0.6); color:rgba(0, 
     padding: 10px; padding-left: 20px; padding-right: 20px;
 }
 .modal_container{
-    background: inherit;
+    background: repeating-linear-gradient(45deg, #9e9e9e44 0.33%, #8e8e8e44 0.66%), repeating-linear-gradient(-45deg, #9e9e9e66 0.33%, #8e8e8e66 0.66%);
     display: none;
     position: fixed;
     top:0;
@@ -548,7 +548,7 @@ tr:hover{transition: 200ms; background: rgba(200, 200, 200, 0.6); color:rgba(0, 
 }
 .modal_container::-webkit-scrollbar{display: none;}
 .sidepanel_container{
-    background: inherit;
+    background: repeating-linear-gradient(45deg, #9e9e9e44 0.33%, #8e8e8e44 0.66%), repeating-linear-gradient(-45deg, #9e9e9e66 0.33%, #8e8e8e66 0.66%);
     position: fixed;
     top:0;
     bottom:0;
