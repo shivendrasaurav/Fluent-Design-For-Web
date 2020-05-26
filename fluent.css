@@ -154,7 +154,6 @@ button,.button{
     text-align: center;
     font-weight: 600;
     margin: 4px;
-    min-width: 200px;
 }
 button:hover,.button:hover{
     opacity: 0.9;
@@ -163,10 +162,10 @@ button:focus,.button:focus{
     opacity: 0.8;
     filter: saturate(160%);
 }
-button.small,.button.small{min-width: 80px; height: 40px; font-size: 36dp;}
+button.small,.button.small{min-width: 150px; height: 40px; font-size: 36dp;}
 button.large,.button.large{min-width: 250px; height: 60px; font-size: 48dp;}
-button.icon,.button.icon{height:40px; width: 40px; border: 1px solid rgba(0, 0, 0, 0.0); margin-left: 1%;}
-button.icon:hover,.button.icon:hover{border: 1px solid rgba(0, 0, 0, 0.4);}
+.icon,.button.icon{max-height:40px; max-width: 40px; border: 1px solid rgba(0, 0, 0, 0.0); margin-left: 1%;}
+.icon:hover,.button.icon:hover{border: 1px solid rgba(0, 0, 0, 0.4);}
 .circular{border-radius: 100%;}
 .tab::before{display: none;}
 .tab button{height: 18%; width: 96%; display: block; margin: auto; text-align: center; background: #DDD;}
@@ -469,8 +468,9 @@ tr:hover{transition: 200ms; background: rgba(200, 200, 200, 0.6); color:rgba(0, 
 .simple_progress_bar{
     position: relative;
     width: 80%;
-    height: 2%;
-    background: rgba(0, 0, 0, 0.4);
+    height: 4px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 90px;
 }
 .simple_progress_bar:hover,.indeterminate_progress_bar:hover{background: rgba(0, 0, 0, 0.6);}
 .simple_progress_bar::before{
@@ -478,8 +478,9 @@ tr:hover{transition: 200ms; background: rgba(200, 200, 200, 0.6); color:rgba(0, 
     content: ' ';
     width: 0%;
     height: 100%;
-    background: radial-gradient(circle at 95%, #08415C, #06A7DD);
-    animation: simple 2.5s infinite linear;
+    background: radial-gradient(circle at 95%, #08415C, #05A5DA);
+    animation: simple 5s infinite ease;
+    border-radius: 90px;
 }
 @keyframes simple{
     0%{width: 0%;}
@@ -489,18 +490,20 @@ tr:hover{transition: 200ms; background: rgba(200, 200, 200, 0.6); color:rgba(0, 
 .indeterminate_progress_bar{
     position: relative;
     width: 80%;
-    height: 2%;
-    background: rgba(0, 0, 0, 0.4);
+    height: 4px;
+    background: rgba(0, 0, 0, 0.2);
     overflow: hidden;
+    border-radius: 90px;
 }
 .indeterminate_progress_bar::before{
     position: absolute;
     content: ' ';
     width: 30%;
     height: 100%;
-    background: radial-gradient(circle at 50%, #08415C, #06A7DD, transparent);
-    animation: intderminate 2.5s infinite linear;
+    background: radial-gradient(circle at 50%, #08415C, #06A7DD);
+    animation: intderminate 5s infinite linear;
     margin-left: -12.5%;
+    border-radius: 90px;
 }
 @keyframes intderminate{
     0%{transform: translateX(0%);}
@@ -527,7 +530,7 @@ tr:hover{transition: 200ms; background: rgba(200, 200, 200, 0.6); color:rgba(0, 
     padding: 10px; padding-left: 20px; padding-right: 20px;
 }
 .modal_container{
-    background: inherit;
+    background: repeating-linear-gradient(45deg, #9e9e9e22 0.33%, #8e8e8e22 0.66%), repeating-linear-gradient(-45deg, #9e9e9e33 0.33%, #8e8e8e33 0.66%);
     display: none;
     position: fixed;
     top:0;
@@ -549,7 +552,7 @@ tr:hover{transition: 200ms; background: rgba(200, 200, 200, 0.6); color:rgba(0, 
 }
 .modal_container::-webkit-scrollbar{display: none;}
 .sidepanel_container{
-    background: inherit;
+    background: repeating-linear-gradient(45deg, #9e9e9e22 0.33%, #8e8e8e22 0.66%), repeating-linear-gradient(-45deg, #9e9e9e33 0.33%, #8e8e8e33 0.66%);
     position: fixed;
     top:0;
     bottom:0;
@@ -635,7 +638,7 @@ img{width: 100%; height: auto;}
     right: 0;
     top:0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.6);
+    background: repeating-linear-gradient(45deg, #9e9e9e44 0.33%, #8e8e8e44 0.66%), repeating-linear-gradient(-45deg, #9e9e9e66 0.33%, #8e8e8e66 0.66%);
     color: #FFF;
     transition: 300ms;
 }
@@ -687,7 +690,7 @@ li.navigation_item{ background: #DFEEFD;}
 .pivot_container{width:100%; z-index: 5; color: #FFF;}
 .pivot_button{padding: 1%; text-decoration: none; background: transparent; color: #FFF;}
 .pivot_button::before{background: #FFF;}
-.pivot_button.active::before{width: 90%;}
+.pivot_button.active::before{width: 100%;}
 .pivot_button.active:hover::before{width: 100%;}
 .pivot_heading{margin-left:24px; font-size: 42px;}
 /*Command Bar*/
