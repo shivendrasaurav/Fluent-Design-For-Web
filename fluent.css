@@ -7,10 +7,9 @@
     border-radius: 2px;
 }
 
-    body{background: #fcfcfc;}
-    *{color: #1e1e1e;}
+    body{background: #fcfcfc; color: #1e1e1e;}
     .modal_container, .sidepanel_container, .overlay{
-        background: #ecececaa;
+        background: #ececec99;
     }
 
 /*@media (prefers-color-scheme: dark){
