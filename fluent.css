@@ -7,6 +7,23 @@
     border-radius: 2px;
 }
 
+    body{background: #fcfcfc; color: #1e1e1e;}
+    .modal_container, .sidepanel_container, .overlay{
+        background: #ececec99;
+    }
+
+/*@media (prefers-color-scheme: dark){
+    body{background: #1e1e1e;}
+    *{color: #fcfcfc;}
+    .modal_container, .sidepanel_container, .overlay{
+        background: #1e1e1eaa;
+    }
+}*/
+
+.spacein{
+    margin: 5px;
+}
+
 .parrallax{
     background-attachment: fixed;
 }
@@ -96,7 +113,7 @@ footer{position: relative; width: 100%;}
 
 /*Elevation*/
 
-.zi{box-shadow:  0 0.1px 0.4px 0 rgba(0, 0, 0, 0.4), 0 0.1px 0.3px 0 rgba(0, 0, 0, 0.38); transition: 250s ease;}
+.zi0{box-shadow:  0 0.1px 0.4px 0 rgba(0, 0, 0, 0.4), 0 0.1px 0.3px 0 rgba(0, 0, 0, 0.38); transition: 250s ease;}
 .zi1{
     box-shadow:  0 0.4px 1px 0 rgba(0, 0, 0, 0.4), 0 0.3px 1px 0 rgba(0, 0, 0, 0.38);
     transition: 250ms ease;
@@ -526,7 +543,7 @@ tr:hover{transition: 200ms; background: rgba(200, 200, 200, 0.6); color:rgba(0, 
     padding: 10px; padding-left: 20px; padding-right: 20px;
 }
 .modal_container{
-    background: repeating-linear-gradient(45deg, #9e9e9e22 0.33%, #8e8e8e22 0.66%), repeating-linear-gradient(-45deg, #9e9e9e33 0.33%, #8e8e8e33 0.66%);
+    background-image: url('./gausian_blur.png');
     display: none;
     position: fixed;
     top:0;
@@ -548,7 +565,7 @@ tr:hover{transition: 200ms; background: rgba(200, 200, 200, 0.6); color:rgba(0, 
 }
 .modal_container::-webkit-scrollbar{display: none;}
 .sidepanel_container{
-    background: repeating-linear-gradient(45deg, #9e9e9e22 0.33%, #8e8e8e22 0.66%), repeating-linear-gradient(-45deg, #9e9e9e33 0.33%, #8e8e8e33 0.66%);
+    background-image: url('./gausian_blur.png');
     position: fixed;
     top:0;
     bottom:0;
@@ -620,7 +637,10 @@ img{width: 100%; height: auto;}
     opacity: 1;
     transition: 300ms;
 }
-.overlay_container:hover .overlay_content{filter: blur(10px);}
+.overlay_container:hover .overlay_content{
+    filter: saturate(250%);
+    filter: blur(25px);
+}
 .overlay_container{
     width: 80%;
     position: relative;
@@ -634,7 +654,7 @@ img{width: 100%; height: auto;}
     right: 0;
     top:0;
     bottom: 0;
-    background: repeating-linear-gradient(45deg, #9e9e9e44 0.33%, #8e8e8e44 0.66%), repeating-linear-gradient(-45deg, #9e9e9e66 0.33%, #8e8e8e66 0.66%);
+    background-image: url('./gausian_blur.png');
     color: #FFF;
     transition: 300ms;
 }

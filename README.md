@@ -1,8 +1,11 @@
 # Fluent Desing for Web
 
-## What is Fluent Design for Web?
+<h2>What is Fluent Design for Web?</h2>
+
+
 Fluent Design for Web, or Fabric UI, is a design used by Windows 10 and other UWP apps, combining Metro UI with Material Design. This project is aimed at bringing this Fluent Design for web applications and websites.
-=======
+
+<hr>
 
 
 Click [here](https://fluentdesignforweb.github.io/) to view the deployement.
@@ -28,4 +31,4 @@ Click [here](https://fluentdesignforweb.github.io/) to view the deployement.
 To use Fluent Design For Web in your project you just need to include this piece of code in <head> tag of your HTML file:<br>
 &lt;link href="https://fluentdesignforweb.github.io/fluent.css" rel="stylesheet" type="text/css"&gt;<br><br>
 Include this for windows and sidepanels:<br>
-&lt;script src="https://fluentdesignforweb.github.io/fluent.js"&lt;&gt;/script&gt;
+&lt;script src="https://fluentdesignforweb.github.io/fluent.js"&gt; &lt;/script&gt;
