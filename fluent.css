@@ -517,8 +517,8 @@ tr:hover{transition: 200ms; background: rgba(200, 200, 200, 0.6); color:rgba(0, 
     border-radius: 90px;
 }
 @keyframes intderminate{
-    0%{transform: translateX(0%);}
-    100%{transform: translateX(350%);}
+    0%{transform: translateX(-90%);}
+    100%{transform: translateX(380%);}
 }
 .spinner{
     border-radius: 100%;
