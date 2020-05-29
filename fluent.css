@@ -542,6 +542,7 @@ tr:hover{transition: 200ms; background: rgba(200, 200, 200, 0.6); color:rgba(0, 
 }
 .modal_container{
     background-image: url('./gausian_blur.png');
+    background-size: contain;
     display: none;
     position: fixed;
     top:0;
@@ -571,6 +572,7 @@ tr:hover{transition: 200ms; background: rgba(200, 200, 200, 0.6); color:rgba(0, 
     right: 0;
     z-index: 11;
     -webkit-backdrop-filter: blur(10px);
+    background-size: contain;
     display: none;
 }
 .sidepanel_content{
@@ -657,6 +659,7 @@ img{width: 100%; height: auto;}
     top:0;
     bottom: 0;
     background-image: url('./gausian_blur.png');
+    background-size: contain;
     color: #FFF;
     transition: 300ms;
 }
