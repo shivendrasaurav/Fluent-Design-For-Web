@@ -179,7 +179,8 @@ nav{
     right: 0px;
     bottom: 0px;
     padding: 2%;
-    background: #ececec;
+    background-color: #fcfcfc66;
+    background-image: url('./gausian_blur.png');
 }
 
 nav *{text-decoration: none;}
@@ -198,7 +199,7 @@ ul.subnav:hover{border: none;}
 
 ul.nav li.nav_title{
     width: 100%;
-    background: inherit;
+    background: transparent; 
     color: #222;
     padding: 15px;
     margin-left: -10px;
@@ -214,7 +215,7 @@ ul.nav li{
     width: 100%;
     padding: 10px;
     margin-left: 20px;
-    background: inherit;    
+    background: transparent;
 }
 
 
