@@ -371,7 +371,7 @@ a:hover:before,.link:hover:before{position: absolute; left:0; bottom: 0; width: 
 /*Buttons*/
 
 button,.button{
-    background: #E1E1E1;
+    background: #fafafa;
     border: none;
     padding: 12px;
     border: none;
@@ -379,6 +379,7 @@ button,.button{
     font-weight: 600;
     margin: 4px;
 }
+.box{border: 0.5px solid #1e1e1e99;}
 button:hover,.button:hover{
     opacity: 0.9;
 }
@@ -386,8 +387,9 @@ button:focus,.button:focus{
     opacity: 0.8;
     filter: saturate(160%);
 }
-button.small,.button.small{min-width: 150px; height: 40px; font-size: 36dp;}
-button.large,.button.large{min-width: 250px; height: 60px; font-size: 48dp;}
+button.small,.button.small{min-width: 100px; height: 42px; font-size: 16px;}
+button.regular,.button.regular{min-width: 150px; height: 54px; font-size: 18px;}
+button.large,.button.large{min-width: 200px; height: 66px; font-size: 20px;}
 .icon,.button.icon{max-height:40px; max-width: 40px; border: 1px solid rgba(0, 0, 0, 0.0); margin-left: 1%;}
 .icon:hover,.button.icon:hover{border: 1px solid rgba(0, 0, 0, 0.4);}
 .circular{border-radius: 100%;}
@@ -504,27 +506,34 @@ input[type=radio].drop_opt:checked{background: #FFF; box-shadow: none;}
 .drop_container .drop:checked ~ .opt_group{display: block; z-index: 2;}
 
 
-ul.dropdown{width: 200px; z-index: 1; display: block; position: absolute;}
-
-ul.dropdown li{display: none;}
-
-ul .dropdown_btn{
+.dropdown_container{width: 200px;}
+.dropdown_btn{
     width: 200px;
-    background: #EEE;
-    color: #222;
     padding: 15px;
-    font-weight: 600;
-}
-
-ul.dropdown:hover li{
     font-size: 16px;
-    display: block;
-    position: relative;
-    top: -20px;
-    width: 200px;
-    padding: 15px;
-    background: #DDD;
+    font-weight: 600;
+    border: 0.5px solid #1e1e1e99;
+    text-align: left;
 }
+.dropdown_items{
+    position: absolute;
+    z-index: 12;
+    max-width: 80%;
+    background: #FFF;
+    color: #000;
+    width:0;
+    height: 0;
+    font-size: 0px;
+    opacity: 0;
+    margin-top: -4px;
+    margin-left: 4px;
+}
+.dropdown_items a{
+    display: block;
+    font-size: 16px;
+}
+.dropdown_container:hover .dropdown_items{opacity: 1; width: 200px; height: auto; font-size: 16px; padding: 15px; overflow-y: auto;}
+
 
 
 /*Slider*/
@@ -680,17 +689,19 @@ ol li::before{
     content: counter(fluent-counter)".";
     padding-right: 20px;
 }
-li:nth-child(odd) {background-color: rgba(0, 0, 0, 0.1); color: #000; backdrop-filter: blur(90px);}
-li:nth-child(even) {background-color:  rgba(255, 255, 255, 0.1); color: #000; backdrop-filter: blur(90px);}
-li:hover{border-left: 4px solid #000; transition: 200ms; background: rgba(200, 200, 200, 0.6);}
+li:nth-child(odd) {background-color: #fafafa; color: #1e1e1e;}
+li:nth-child(even) {background-color:  #dadada; color: #1e1e1e;}
+li:hover{border-left: 2px solid #000; transition: 200ms; background: #fcfcfc;}
 
 /*Tables*/
 .table_container{overflow-x: auto; display: block;}
-table{border-collapse: collapse; border:none; width: 90%;}
-th,td{padding:10px; border-radius: 0px;}
-tr:nth-child(odd){background: rgba(0, 0, 0, 0.1);}
-tr:nth-child(even){background: rgba(255, 255, 255, 0.1);}
-tr:hover{transition: 200ms; background: rgba(200, 200, 200, 0.6); color:rgba(0, 0, 0, 0.8);}
+table{border-collapse: collapse; border:none; width: auto;}
+th,td{padding:10px; border-radius: 0px; min-width: 120px;}
+tr:nth-child(odd){background: #fcfcfc;}
+tr:nth-child(even){background: #ececec;}
+td:hover{transition: 200ms; background: #dcdcdc; color:#1e1e1e}
+th{text-align: left;}
+th:hover{opacity: 0.8;}
 
 /*Progress*/
 .simple_progress_bar{
@@ -816,19 +827,17 @@ tr:hover{transition: 200ms; background: rgba(200, 200, 200, 0.6); color:rgba(0, 
 
 .tooltip_info{
     border: 0.5px solid;
-    border-radius: 5px;
     position: absolute;
     z-index: 12;
-    max-width: 80%;
-    background: #FFF;
-    color: #000;
+    min-width: 200px;
     width:0;
     height: 0;
     font-size: 0px;
     opacity: 0;
-    margin-top:24px;
+    margin-top: -3.5vh;
+    margin-left: -10px;
 }
-.tooltip_container:hover .tooltip_info{opacity: 1; width: auto; height: auto; font-size: 16px; padding: 15px; overflow-y: auto;}
+.tooltip_container:hover .tooltip_info{opacity: 1; width: auto; height: auto; font-size: 12px; padding: 8px; overflow-y: auto;}
 
 .dialogue_box{
     z-index: 12;
@@ -892,16 +901,16 @@ img{width: 100%; height: auto;}
     z-index: 1;
     position: fixed;
     text-align: center;
-    bottom:20;
-    padding: 2%;
-    min-width: 40%;
-    max-width: 80%;
-    opacity: 0.9;
-    display: none;
-    -webkit-backdrop-filter: blur(10px);
+    bottom:20px;
+    left: 20px;
+    padding: 12px;
+    min-width: 200px;
+    opacity: 0;
+    z-index: 11;
 }
 .snackbar_content:hover{opacity: 1;}
-.snackbar_container .snackbar_button:focus ~ .snackbar_content{display: block; margin: auto;}
+.snackbar_container .snackbar_button:focus ~ .snackbar_content{opacity: 0.9; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);}
+
 
 /*Breadcrumbs*/
 li.breadcrumb_icon{font-size: 20px;}
@@ -1002,7 +1011,7 @@ li{font-size: 14px;}
     padding: 20px;
     background: #e1519133;
     color: #0e0e0e;
-    font-family: 'Consolas', 'Roboto';
+    font-family: 'Source Sans Pro', 'Consolas', 'Roboto';
     text-align: left;
     overflow-x: scroll;
     border-radius: 10px;
