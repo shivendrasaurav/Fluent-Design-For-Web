@@ -347,7 +347,7 @@ nav .nav_content{
 .zi4:hover{box-shadow:  12px 0 24px 0 rgba(0, 0, 0, 0.4), 0 6px 18px 0 rgba(0, 0, 0, 0.38); transition: 250ms;}
 
 /*Colors*/
-.transparent{background: transparent; color:#999;}
+.transparent{background: transparent; color:#232323;}
 .primary_blue{background: #0065AF; color:#FFF;}
 .primary_green{background: #28B85B; color:#FFF;}
 .primary_red{background: #cc2936; color:#FFF;}
@@ -432,15 +432,17 @@ button.large,.button.large{min-width: 200px; height: 66px; font-size: 20px;}
 
 /*Inputs*/
 
+
 input[type=text],input[type=password],input[type=tel],input[type=number],input[type=email],
 input[type=date],input[type=datetime-local],input[type=month],input[type=search]{
-    width: 80%;
-    padding: 2%;
-    border: 1.5px solid rgba(0, 0, 0, 0.4);
+    width: 360px;
+    max-width: 80%;
+    padding: 8px;
+    border: 1.5px solid #3e3e3e;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 input[type=text]:hover,input[type=password]:hover,input[type=tel]:hover,input[type=number]:hover,
@@ -451,7 +453,11 @@ input[type=text]:focus,input[type=password]:focus,input[type=tel]:focus,input[ty
 input[type=email]:focus,input[type=date]:focus,input[type=datetime-local]:focus,input[type=month]:focus,input[type=search]:focus{
     border: 1.5px solid rgba(6, 167, 221, 1);
 }
-
+input.btm_brdr, input.btm_brdr:hover, input.btm_brdr:focus{
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
 .search_box{
     display:block;
     width: 80%;
@@ -542,14 +548,15 @@ input[type=range]{
     -moz-appearance: none;
     width: 100%;
     background: rgba(125, 125, 125, 0.4);
-    height: 1%;
+    height: 6px;
+    border-radius: 90px;
 }
 input[type=range]:hover{background: rgba(125, 125, 125, 0.6);}
 
 input[type=range]::-moz-range-thumb{
     -moz-appearance: none;
-    height: 24px;
-    width: 8px;
+    height: 26px;
+    width: 10px;
     border-radius: 100px;
     background: rgba(6, 167, 221, 1);
 }
@@ -561,7 +568,7 @@ input[type=range]::-webkit-slider-thumb{
     border-radius: 100px;
     background: rgba(6, 167, 221, 1);
 }
-input[type=range]:active::-webkit-slider-thumb{background: rgba(125, 125, 125, 0.6);}
+input[type=range]:active::-webkit-slider-thumb{background: #3C3C3C;}
 input[type=range]::-ms-thumb{
     -ms-appearance: none;
     appearance: none;
@@ -582,8 +589,8 @@ input[type=radio],.radioinfo{
     background: #FFF;
     border-radius: 90px;
     border:2px solid #000;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 5px;
+    margin-bottom: -5px;
 }
 input[type=radio]:hover{background: rgba(125, 125, 125, 0.6);}
 input[type=radio]:checked{background: rgba(0, 0, 0, 0.8); border: 5px solid #FFF; box-shadow: 0px 0px 2px 2px #06A7DD}
@@ -836,6 +843,7 @@ th:hover{opacity: 0.8;}
     opacity: 0;
     margin-top: -3.5vh;
     margin-left: -10px;
+    background: #fcfcfc;
 }
 .tooltip_container:hover .tooltip_info{opacity: 1; width: auto; height: auto; font-size: 12px; padding: 8px; overflow-y: auto;}
 
@@ -1071,12 +1079,11 @@ img.square{
 
     input[type=text],input[type=password],input[type=tel],input[type=number],input[type=email],.drop:hover,
     input[type=date],input[type=datetime-local],input[type=month],input[type=search]{
-        width: 80%;
         border: 1.5px solid rgba(0, 0, 0, 0.4);
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
-        font-size: 14px;
+        font-size: 18px;
         background: #000000;
         color: #fcfcfc;
         height: 40px;
