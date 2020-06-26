@@ -7,6 +7,7 @@
     border-radius: 2px;
 }
 
+/*
 @media (prefers-color-scheme: dark){
     body{background: #1e1e1e; color: #fcfcfc;}
     a, .link, ul .dropdown_btn{
@@ -16,6 +17,7 @@
         background: #1e1e1eaa;
     }
 }
+*/
 
 .spacein{
     margin: 5px;
@@ -1043,6 +1045,7 @@ img.square{
 
 
 
+/*
 @media (prefers-color-scheme: dark){
     .ms-icon{
         color: #fcfcfc;
@@ -1130,3 +1133,4 @@ img.square{
     li:hover{border-left: 4px solid #000; transition: 200ms; background: rgba(200, 200, 200, 0.6);}
 
 }
+*/
