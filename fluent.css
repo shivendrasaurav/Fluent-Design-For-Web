@@ -56,7 +56,7 @@ a,p,pre{font-size: 18px; font-weight: 400;}
     margin: auto;
     padding: 10px 30px;
 }
-.outline{border: 1px solid #000; padding: 4px; border-radius: 10px; width: 90%;}
+.outline{border: none; padding: 2%; border-radius: 10px; width: 90%;}
 footer{position: relative; width: 100%;}
 .row{display: inline-flex;}
 .column{display: inline-block; vertical-align: top;}
@@ -265,7 +265,7 @@ nav .nav_content{
     margin: auto;
 }
 
-.nav{width: 100%; z-index: 1; display: block; padding: 0px; margin-bottom: -6%;}
+.nav{width: 100%; z-index: 1; display: block; padding: 0px 10px;}
 
 .subnav{border: none; margin-left: -4%;}
 .subnav:hover{border: none;}
@@ -279,8 +279,7 @@ nav .nav_content{
     font-weight: 600;
     display: block;
     font-size: 20px;
-    margin-top: -13%;
-    line-height: 40px;
+    margin-top: -40px;
 }
 
 .nav_btn{
