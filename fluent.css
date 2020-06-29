@@ -52,11 +52,11 @@ a,p,pre{font-size: 18px; font-weight: 400;}
 /*Grid*/
 .page_container,.nav_container{
     display: block;
-    width: 88%;
+    width: 92%;
     margin: auto;
     padding: 10px 30px;
 }
-.outline{border: 1px solid #000; padding: 4px; border-radius: 10px; width: 84%;}
+.outline{border: 1px solid #000; padding: 4px; border-radius: 10px; width: 90%;}
 footer{position: relative; width: 100%;}
 .row{display: inline-flex;}
 .column{display: inline-block; vertical-align: top;}
@@ -392,7 +392,7 @@ button:focus,.button:focus{
 button.small,.button.small{min-width: 100px; height: 42px; font-size: 16px;}
 button.regular,.button.regular{min-width: 150px; height: 54px; font-size: 18px;}
 button.large,.button.large{min-width: 200px; height: 66px; font-size: 20px;}
-.icon,.button.icon{max-height:40px; max-width: 40px; border: 1px solid rgba(0, 0, 0, 0.0); margin-left: 1%;}
+.icon,.button.icon{min-height:40px; min-width: 40px; border: 1px solid rgba(0, 0, 0, 0.0); margin-left: 1%;}
 .icon:hover,.button.icon:hover{border: 1px solid rgba(0, 0, 0, 0.4);}
 .circular{border-radius: 100%;}
 .tab::before{display: none;}

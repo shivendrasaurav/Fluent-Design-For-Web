@@ -11,15 +11,29 @@
         <script src="fluent.js"></script>
         <link type="icon" href="./index_img/favicon.ico" rel="icon">
     </head>
-    <body onloa="opendoc();" class="primary_inverted">
+    <body class="primary_inverted">
 
-        <div class="large12 pivot_container primary_blue top" style="position: relative; padding-bottom: 4px;"><br />
-            <a class="pivot_button" style="font-size: 22px;" href="https://fluentdesignforweb.github.io/">Fluent Design</button>
+        <div class="large12 pivot_container primary_blue top" style="position: relative; padding-bottom: 6px; height: 64px; padding-top: 12px;">
+            <button class="primary_blue large0 medium0 " onclick="openside1();"><i class="ms-Icon ms-Icon--GlobalNavButton icon-small"></i></button>
+            <a class="pivot_button" style="font-size: 22px;" href="https://fluentdesignforweb.github.io/">Fluent Design</a>
             <a class="pivot_button small0" href="https://fluentdesignforweb.github.io/documentation/#/getstarted">Get Started</a>
             <a class="pivot_button small0" href="https://fluentdesignforweb.github.io/documentation/#/boilerplate">Boilerplate</a>
             <a class="pivot_button small0" href="https://fluentdesignforweb.github.io/documentation/#/styles">Styles</a>
             <a class="pivot_button small0" href="https://fluentdesignforweb.github.io/documentation/#/controls">Controls</a>
-            <button class="primary_blue right large0 medium0"><i class="ms-Icon ms-Icon--GlobalNavButton icon-small"></i></button><br /><br />
+            <br />
+        </div>
+
+        <div class="sidepanel_container" id="side1" style="display: none;">
+            <div class="sidepanel_content left">
+                <button class="primary_red left icon" onclick="closeside1();">X</button>
+                <br><br><br><br>
+                <a href="https://fluentdesignforweb.github.io/documentation/#/getstarted"><div class="panel_item">Get Started</div></a>
+                <a href="https://fluentdesignforweb.github.io/documentation/#/boilerplate"><div class="panel_item">Boilerplate</div></a>
+                <a href="https://fluentdesignforweb.github.io/documentation/#/styles"><div class="panel_item">Styles</div></a>
+                <a href="https://fluentdesignforweb.github.io/documentation/#/controls"><div class="panel_item">Controls</div></a>
+                <a href="https://fluentdesignforweb.github.io/documentation/#/iconpack"><div class="panel_item">Icons</div></a>
+                <span style="color: #1e1e1e; position: absolute; bottom: 10px;">&copy; The Code Drop 2020 </span>
+            </div>
         </div>
 
         <main class="page_container">
