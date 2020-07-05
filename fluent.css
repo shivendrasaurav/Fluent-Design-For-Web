@@ -512,9 +512,14 @@ input[type=radio].drop_opt:hover{background: #DDD}
 input[type=radio].drop_opt:checked{background: #FFF; box-shadow: none;}
 .drop_container .drop:checked ~ .opt_group{display: block; z-index: 2;}
 
-
-.dropdown_container{width: 200px;}
+.dropdown_container{width: auto; display: inline-block;}
+.dropdown_container .commandbar_button{
+    width: auto;
+    border: none;
+    padding: 10px;
+}
 .dropdown_btn{
+    height: 30px;
     width: 200px;
     padding: 15px;
     font-size: 16px;
@@ -955,10 +960,17 @@ li.navigation_item{ background: #DFEEFD;}
 .pivot_button::before{background: #FFF;}
 .pivot_button.active::before{width: 100%;}
 .pivot_button.active:hover::before{width: 100%;}
-.pivot_heading{margin-left:24px; font-size: 42px;}
+.pivot_title{
+    font-size: 24px;
+    color: #fcfcfc;
+    padding: 5px;
+}
+.pivot_title:hover::before{
+    display: none;
+}
 /*Command Bar*/
-.commandbar_container{width: 100%;}
-.commandbar_button{background: #FFF; padding: 1%;}
+.commandbar_container{width: 100%; background: #fcfcfc;}
+.commandbar_button{background: #fcfcfc; padding: 1%; font-size: 16px;}
 .commandbar_button:hover{background: rgba(0, 0, 0, 0.2);}
 .commandbar_button:focus{background: rgba(0, 0, 0, 0.3);}
 
