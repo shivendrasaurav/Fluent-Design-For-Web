@@ -956,6 +956,19 @@ li.navigation_item{ background: #DFEEFD;}
 .pivot_button.active::before{width: 100%;}
 .pivot_button.active:hover::before{width: 100%;}
 .pivot_heading{margin-left:24px; font-size: 42px;}
+.pivot_title{
+    font-size: 24px;
+    color: #fcfcfc;
+    padding: 5px;
+}
+.pivot_title:hover::before{
+    display: none;
+}
+.pivot_menu{
+    min-height: 40px;
+    padding: 15px 10px;
+}
+
 /*Command Bar*/
 .commandbar_container{width: 100%;}
 .commandbar_button{background: #FFF; padding: 1%;}
