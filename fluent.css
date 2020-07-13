@@ -973,6 +973,7 @@ li.navigation_item{ background: #DFEEFD;}
 .pivot_menu.primary_white a, .pivot_menu a{
     color: #1e1e1e;
 }
+.pivot_button.primary_white::before{background: #1e1e1e;}
 
 /*Command Bar*/
 .commandbar_container{width: 100%;}
