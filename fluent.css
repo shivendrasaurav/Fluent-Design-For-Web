@@ -967,6 +967,11 @@ li.navigation_item{ background: #DFEEFD;}
 .pivot_menu{
     min-height: 40px;
     padding: 15px 10px;
+    position: fixed;
+    top: 0px;
+}
+.pivot_menu.primary_white a, .pivot_menu a{
+    color: #1e1e1e;
 }
 
 /*Command Bar*/
