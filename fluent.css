@@ -61,8 +61,8 @@ footer{position: relative; width: 100%;}
 .row{display: inline-flex;}
 .column{display: inline-block; vertical-align: top;}
 .center{display: block; margin: auto;}
-.left{display: block; float: left;}
-.right{display: block; float: right;}
+.left{display: flex; float: left;}
+.right{display: flex; float: right;}
 
 
 /*For Large Screens*/
@@ -959,14 +959,13 @@ li.navigation_item{ background: #DFEEFD;}
 .pivot_title{
     font-size: 24px;
     color: #fcfcfc;
-    padding: 5px;
+    padding: 1%;
 }
 .pivot_title:hover::before{
     display: none;
 }
 .pivot_menu{
-    min-height: 40px;
-    padding: 15px 10px;
+    padding: 10px 20px;
     position: fixed;
     top: 0px;
 }
