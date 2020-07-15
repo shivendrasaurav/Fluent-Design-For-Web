@@ -391,7 +391,7 @@ button:focus,.button:focus{
 button.small,.button.small{min-width: 100px; height: 42px; font-size: 16px;}
 button.regular,.button.regular{min-width: 150px; height: 54px; font-size: 18px;}
 button.large,.button.large{min-width: 200px; height: 66px; font-size: 20px;}
-.icon,.button.icon{height:50px; width: 50px; border: 1px solid rgba(0, 0, 0, 0.0); margin-left: 1%;}
+.icon,.button.icon{height:50px; width: 50px; border: 1px solid rgba(0, 0, 0, 0.0);}
 .icon:hover,.button.icon:hover{border: 1px solid rgba(0, 0, 0, 0.4);}
 .circular{border-radius: 100%;}
 .tab::before{display: none;}
