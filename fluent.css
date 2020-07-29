@@ -542,7 +542,6 @@ input[type=radio].drop_opt:checked{background: #FFF; box-shadow: none;}
 .dropdown_container:hover .dropdown_items{opacity: 1; width: 200px; height: auto; font-size: 16px; padding: 15px; overflow-y: auto;}
 
 
-
 /*Slider*/
 input[type=range]{
     -webkit-appearance: none;
@@ -905,6 +904,35 @@ img{width: 100%; height: auto;}
     color: #FFF;
     transition: 300ms;
 }
+
+/*collapsible*/
+.collapsible{
+
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.collapsible p{
+    border: 1px solid #1e1e1e;
+    border-top: none;
+    margin-top: -0.3%;
+    margin-left: 4px;
+    width: 100%;
+    padding: 8px;
+    font-size: 18px;
+}
+.collapsible_button{
+    width: 100%;
+    font-size: 16px;
+    text-align: left;
+}
+
+.collapsible p{display: none;}
+.collapsible p:hover{display: block;}
+.collapsible_button:focus ~ p{display: block;}
+
+
 /*Snackbar*/
 .snackbar_content{
     z-index: 1;
