@@ -61,8 +61,8 @@ footer{position: relative; width: 100%;}
 .row{display: inline-flex;}
 .column{display: inline-block; vertical-align: top;}
 .center{display: block; margin: auto;}
-.left{display: block; float: left;}
-.right{display: block; float: right;}
+.left{display: flex; float: left;}
+.right{display: flex; float: right;}
 
 
 /*For Large Screens*/
@@ -391,7 +391,7 @@ button:focus,.button:focus{
 button.small,.button.small{min-width: 100px; height: 42px; font-size: 16px;}
 button.regular,.button.regular{min-width: 150px; height: 54px; font-size: 18px;}
 button.large,.button.large{min-width: 200px; height: 66px; font-size: 20px;}
-.icon,.button.icon{height:50px; width: 50px; border: 1px solid rgba(0, 0, 0, 0.0); margin-left: 1%;}
+.icon,.button.icon{height:50px; width: 50px; border: 1px solid rgba(0, 0, 0, 0.0);}
 .icon:hover,.button.icon:hover{border: 1px solid rgba(0, 0, 0, 0.4);}
 .circular{border-radius: 100%;}
 .tab::before{display: none;}
@@ -545,7 +545,6 @@ input[type=radio].drop_opt:checked{background: #FFF; box-shadow: none;}
     font-size: 16px;
 }
 .dropdown_container:hover .dropdown_items{opacity: 1; width: 200px; height: auto; font-size: 16px; padding: 15px; overflow-y: auto;}
-
 
 
 /*Slider*/
@@ -910,6 +909,35 @@ img{width: 100%; height: auto;}
     color: #FFF;
     transition: 300ms;
 }
+
+/*collapsible*/
+.collapsible{
+
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.collapsible p{
+    border: 1px solid #1e1e1e;
+    border-top: none;
+    margin-top: -0.3%;
+    margin-left: 4px;
+    width: 100%;
+    padding: 8px;
+    font-size: 18px;
+}
+.collapsible_button{
+    width: 100%;
+    font-size: 16px;
+    text-align: left;
+}
+
+.collapsible p{display: none;}
+.collapsible p:hover{display: block;}
+.collapsible_button:focus ~ p{display: block;}
+
+
 /*Snackbar*/
 .snackbar_content{
     z-index: 1;
@@ -960,6 +988,7 @@ li.navigation_item{ background: #DFEEFD;}
 .pivot_button::before{background: #FFF;}
 .pivot_button.active::before{width: 100%;}
 .pivot_button.active:hover::before{width: 100%;}
+.pivot_heading{margin-left:24px; font-size: 42px;}
 .pivot_title{
     font-size: 24px;
     color: #fcfcfc;
@@ -968,6 +997,16 @@ li.navigation_item{ background: #DFEEFD;}
 .pivot_title:hover::before{
     display: none;
 }
+.pivot_menu{
+    padding: 10px 20px;
+    position: fixed;
+    top: 0px;
+}
+.pivot_menu.primary_white a, .pivot_menu a{
+    color: #1e1e1e;
+}
+.pivot_button.primary_white::before{background: #1e1e1e;}
+
 /*Command Bar*/
 .commandbar_container{width: 100%; background: #fcfcfc;}
 .commandbar_button{background: #fcfcfc; padding: 1%; font-size: 16px;}
