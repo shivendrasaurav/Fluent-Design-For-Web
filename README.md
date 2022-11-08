@@ -1,36 +1,6 @@
-# Fluent Desing for Web
+# Thanks for all the support
+This is an older version of the project with a newer version already in place as an organisation with added functionalities, better documentation and better packaging for your react based projects.
 
-## What is Fluent Design for Web?
-
-
-Fluent Design for Web, or Fabric UI, is a design used by Windows 10 and other UWP apps, combining Metro UI with Material Design. This project is aimed at bringing this Fluent Design for web applications and websites.
-
-<hr>
-
-
-Click [here](https://fluentdesignforweb.github.io/) to view the deployement.
-
-## Features:
-- #### Styles:
-1. Typography
-2. Elevation
-3. Colors
-4. Grid Layout
-5. Icon Pack
-
-- #### Controls:
-1. Inputs 
-2. Utilities
-3. Surfaces
-4. Lists and Tables
-5. Navigations
-6. Progress
-
-## How to use Fluent Design For Web in your project?
-
-To use Fluent Design For Web in your project you just need to include this piece of code in <head> tag of your HTML file:<br>
-&lt;link href="https://fluentdesignforweb.github.io/fluent.css" rel="stylesheet" type="text/css"&gt;<br><br>
-Or,<br>
-&lt;link href="https://fluentdesignforweb.github.io/fluent.min.css" rel="stylesheet" type="text/css"&gt;<br><br>
-Include this for windows and sidepanels:<br>
-&lt;script src="https://fluentdesignforweb.github.io/fluent.js"&gt; &lt;/script&gt;
+> ## Links to Fluent Design for Web v2
+> - Github Page : https://github.com/fluentdesignweb
+> - Website : https://fluentdesignforweb.github.io/v2/index.html
